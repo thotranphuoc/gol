@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <div fxHide.sm fxHide.md fxHide.lg fxHide.xl>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div><a routerLink="/">G.O.L v0.1</a></div>
+  <div fxHide.xs fxFlex fxLayout fxLayoutAlign="flex-end">
+    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li *ngIf="isAuth" (click)="onLogout()"><a>Logout</a></li>
+    </ul>
+    <ul *ngIf="!isAuth" fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li *ngFor="let COMP of Components1"><a routerLink="{{COMP.routerLink}}">{{COMP.title}}</a></li>
+    </ul>
+    <ul *ngIf="isAuth" fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li *ngFor="let COMP of Components2"><a routerLink="{{COMP.routerLink}}">{{COMP.title}}</a></li>
+    </ul>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/gol-ng7-material",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
