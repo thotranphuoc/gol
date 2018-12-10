@@ -1,3 +1,58 @@
-<p>
-  inbound-sea-freight-do-general works!
-</p>
+<h2 class="titlepage">General</h2>
+<mat-form-field class="input-full-width">
+  <input matInput name="do_no" id="do_no" placeholder="D/O No." value="" />
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <mat-select name="do_type" id="do_type" placeholder="D/O Type">
+    <mat-option value="D/O Draft">D/O Draft</mat-option>
+    <mat-option value="D/O Information">D/O Information</mat-option>
+    <mat-option value="D/O Template">D/O Template</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <input matInput name="doc_name" id="doc_name" placeholder="Doc name" value="" />
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <input matInput name="hbl_no" id="hbl_no" placeholder="HB/L No." value="" />
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <input matInput name="transit_hbl" id="transit_hbl" placeholder="Transit HB/L" value="" />
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <input matInput name="filejob_no" id="filejob_no" placeholder="File/Job No." value="" />
+  <button mat-button matSuffix mat-icon-button aria-label="Search File">
+    <mat-icon>search</mat-icon>
+  </button>
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <input matInput name="shipment_code" id="shipment_code" placeholder="Shipment Code" value="" />
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <mat-select name="service_code" id="service_code" placeholder="Service Code">
+    <mat-option value="Airport to Airport">Airport to Airport</mat-option>
+    <mat-option value="CFS/CFS">CFS/CFS</mat-option>
+    <mat-option value="CFS/CY">CFS/CY</mat-option>
+    <mat-option value="CY/CFS">CY/CFS</mat-option>
+    <mat-option value="CY/CY">CY/CY</mat-option>
+    <mat-option value="CY/DOOR">CY/DOOR</mat-option>
+    <mat-option value="Door to Door">Door to Door</mat-option>
+    <mat-option value="Door to Port">Door to Port</mat-option>
+    <mat-option value="EX-WORK">EX-WORK</mat-option>
+    <mat-option value="Port to Door">Port to Door</mat-option>
+    <mat-option value="Port to Port">Port to Port</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <mat-select name="shipment_type" id="shipment_type" placeholder="Shipment Type">
+    <mat-option value="FCL">FCL</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <mat-select name="original_hbl_required" id="original_hbl_required" placeholder="Original HB/L Required">
+    <mat-option value="No">No</mat-option>
+    <mat-option value="Yes">Yes</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="input-full-width">
+  <input matInput name="mbl_no" id="mbl_no" placeholder="MB/L No." value="" />
+</mat-form-field>
