@@ -5,10 +5,10 @@
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
         <div fxFlex="50%" fxFlex.xs="100%">
             <mat-form-field class="input-full-width">
-                <input matInput [(ngModel)]="do_no" placeholder="D/O No." value="" />
+                <input matInput placeholder="D/O No." value="" />
               </mat-form-field>
               <mat-form-field class="input-full-width">
-                <mat-select [(ngModel)]="do_type" placeholder="D/O Type">
+                <mat-select placeholder="D/O Type">
                   <mat-option value="D/O Draft">D/O Draft</mat-option>
                   <mat-option value="D/O Information">D/O Information</mat-option>
                   <mat-option value="D/O Template">D/O Template</mat-option>
@@ -19,25 +19,25 @@
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
         <div fxFlex="50%" fxFlex.xs="100%">
           <mat-form-field class="input-full-width">
-            <input matInput [(ngModel)]="doc_name" placeholder="Doc name" value="" />
+            <input matInput placeholder="Doc name" value="" />
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <input matInput [(ngModel)]="hbl_no" placeholder="HB/L No." value="" />
+            <input matInput placeholder="HB/L No." value="" />
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <input matInput [(ngModel)]="transit_hbl" placeholder="Transit HB/L" value="" />
+            <input matInput placeholder="Transit HB/L" value="" />
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <input matInput [(ngModel)]="filejob_no" placeholder="File/Job No." value="" />
+            <input matInput placeholder="File/Job No." value="" />
             <button mat-button matSuffix mat-icon-button aria-label="Search File">
               <mat-icon>search</mat-icon>
             </button>
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <input matInput [(ngModel)]="shipment_code" placeholder="Shipment Code" value="" />
+            <input matInput placeholder="Shipment Code" value="" />
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <mat-select [(ngModel)]="service_code" placeholder="Service Code">
+            <mat-select placeholder="Service Code">
               <mat-option value="Airport to Airport">Airport to Airport</mat-option>
               <mat-option value="CFS/CFS">CFS/CFS</mat-option>
               <mat-option value="CFS/CY">CFS/CY</mat-option>
@@ -52,31 +52,31 @@
             </mat-select>
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <mat-select [(ngModel)]="shipment_type" placeholder="Shipment Type">
+            <mat-select placeholder="Shipment Type">
               <mat-option value="FCL">FCL</mat-option>
             </mat-select>
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <mat-select [(ngModel)]="original_hbl_required" placeholder="Original HB/L Required">
+            <mat-select placeholder="Original HB/L Required">
               <mat-option value="No">No</mat-option>
               <mat-option value="Yes">Yes</mat-option>
             </mat-select>
           </mat-form-field>
           <mat-form-field class="input-full-width">
-            <input matInput [(ngModel)]="mbl_no" placeholder="MB/L No." value="" />
+            <input matInput placeholder="MB/L No." value="" />
           </mat-form-field>
         </div>
         <div fxFlex="50%" fxFlex.xs="100%">
             <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="posting_date" [(ngModel)]="posting_date" placeholder="Posting date">
+                <input matInput [matDatepicker]="posting_date" placeholder="Posting date">
                 <mat-datepicker-toggle matSuffix [for]="posting_date"></mat-datepicker-toggle>
                 <mat-datepicker #posting_date></mat-datepicker>
             </mat-form-field>
             <mat-form-field class="input-full-width">
-                <input matInput [(ngModel)]="po_no" placeholder="P.O No." value="" />
+                <input matInput placeholder="P.O No." value="" />
               </mat-form-field>
             <mat-form-field class="input-full-width">
-              <mat-select [(ngModel)]="transaction_code" placeholder="Transaction Code">
+              <mat-select placeholder="Transaction Code">
                 <mat-option value="Undefined">Undefined</mat-option>
                 <mat-option value="CIF">CIF</mat-option>
                 <mat-option value="DELIVERY DUTY P">DELIVERY DUTY P</mat-option>
@@ -87,28 +87,28 @@
               </mat-select>
             </mat-form-field>
             <mat-form-field class="input-full-width">
-              <input matInput [(ngModel)]="agent_ref" placeholder="Agent Ref" value="" />
+              <input matInput placeholder="Agent Ref" value="" />
             </mat-form-field>
             <mat-form-field class="input-full-width">
-              <input matInput [(ngModel)]="contract_no" placeholder="Contract No." value="" />
+              <input matInput placeholder="Contract No." value="" />
             </mat-form-field>
             <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="an1st_sendingdate" [(ngModel)]="an1st_sendingdate" placeholder="A/N: 1st Sending Date">
+                <input matInput [matDatepicker]="an1st_sendingdate" placeholder="A/N: 1st Sending Date">
                 <mat-datepicker-toggle matSuffix [for]="an1st_sendingdate"></mat-datepicker-toggle>
                 <mat-datepicker #an1st_sendingdate></mat-datepicker>
             </mat-form-field>
             <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="an2nd_sendingdate" [(ngModel)]="an2nd_sendingdate" placeholder="A/N: 2nd Sending Date">
+                <input matInput [matDatepicker]="an2nd_sendingdate" placeholder="A/N: 2nd Sending Date">
                 <mat-datepicker-toggle matSuffix [for]="an2nd_sendingdate"></mat-datepicker-toggle>
                 <mat-datepicker #an2nd_sendingdate></mat-datepicker>
             </mat-form-field>
             <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="an3rd_sendingdate" [(ngModel)]="an3rd_sendingdate" placeholder="A/N: 3rd Sending Date">
+                <input matInput [matDatepicker]="an3rd_sendingdate" placeholder="A/N: 3rd Sending Date">
                 <mat-datepicker-toggle matSuffix [for]="an3rd_sendingdate"></mat-datepicker-toggle>
                 <mat-datepicker #an3rd_sendingdate></mat-datepicker>
             </mat-form-field>
             <mat-form-field class="input-full-width">
-              <input matInput [(ngModel)]="cus_declaration_no" placeholder="Cus. Declaration No" value="" />
+              <input matInput placeholder="Cus. Declaration No" value="" />
             </mat-form-field>
           </div>
       </div>
