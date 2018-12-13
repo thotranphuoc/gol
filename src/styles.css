@@ -6,6 +6,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .form {min-width: 150px;max-width: 1000px;width: 100%;}  
 .input-full-width {width: 100%;}
 .input-half-width {width: 48%;margin-right: 10px;}
+.input-34-width{width:34%;margin-right: 10px;}
+.input-14-width{width:12%;}
 .margin-checkbox{margin:0 10px;}
 #mat-checkbox-4 .mat-checkbox-layout,#mat-checkbox-6 .mat-checkbox-layout,#mat-checkbox-8 .mat-checkbox-layout,#mat-checkbox-9 .mat-checkbox-layout{margin-top:-70px;}
 .fl{float: left;}
@@ -15,4 +17,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-grid-tile .mat-figure{justify-content:left !important;padding: 0 0 0 10px !important;}
 @media screen and (max-width:568px){
     .w100{width:100% !important;}
+    .input-half-width {width: 100%;margin-right: 0;}
+    .input-34-width{width:100%;margin-right: 0;}
+    .input-14-width{width:100%;}
 }

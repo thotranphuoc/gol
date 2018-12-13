@@ -14,6 +14,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material';
 import { MatFormFieldModule } from '@angular/material';
+import {MatTableModule} from '@angular/material/table';
+
 
 import { MaterialModule } from '../shares/material.module';
 import { ExampleMaterialComponent } from './example-material/example-material.component';
@@ -89,7 +91,8 @@ const PRINT_BREAKPOINTS = [{
     MatListModule,
     MatCheckboxModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTableModule
   ],
   providers: [{provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true}],
   bootstrap: [AppComponent],
