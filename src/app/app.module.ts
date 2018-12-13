@@ -8,8 +8,10 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { FlexLayoutModule, BREAKPOINT } from '@angular/flex-layout';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { MaterialModule } from '../shares/material.module';
 import { ExampleMaterialComponent } from './example-material/example-material.component';
@@ -79,7 +81,9 @@ const PRINT_BREAKPOINTS = [{
     AngularFireAuthModule,
     FlexLayoutModule,
     MatStepperModule,
-    MatDialogModule
+    MatDialogModule,
+    MatListModule,
+    MatCheckboxModule
   ],
   providers: [{provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true}],
   bootstrap: [AppComponent],
