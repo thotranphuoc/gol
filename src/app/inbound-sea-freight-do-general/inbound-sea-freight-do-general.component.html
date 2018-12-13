@@ -1,58 +1,83 @@
-<h2 class="titlepage">General</h2>
-<mat-form-field class="input-full-width">
-  <input matInput name="do_no" id="do_no" placeholder="D/O No." value="" />
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <mat-select name="do_type" id="do_type" placeholder="D/O Type">
-    <mat-option value="D/O Draft">D/O Draft</mat-option>
-    <mat-option value="D/O Information">D/O Information</mat-option>
-    <mat-option value="D/O Template">D/O Template</mat-option>
-  </mat-select>
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <input matInput name="doc_name" id="doc_name" placeholder="Doc name" value="" />
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <input matInput name="hbl_no" id="hbl_no" placeholder="HB/L No." value="" />
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <input matInput name="transit_hbl" id="transit_hbl" placeholder="Transit HB/L" value="" />
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <input matInput name="filejob_no" id="filejob_no" placeholder="File/Job No." value="" />
-  <button mat-button matSuffix mat-icon-button aria-label="Search File">
-    <mat-icon>search</mat-icon>
-  </button>
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <input matInput name="shipment_code" id="shipment_code" placeholder="Shipment Code" value="" />
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <mat-select name="service_code" id="service_code" placeholder="Service Code">
-    <mat-option value="Airport to Airport">Airport to Airport</mat-option>
-    <mat-option value="CFS/CFS">CFS/CFS</mat-option>
-    <mat-option value="CFS/CY">CFS/CY</mat-option>
-    <mat-option value="CY/CFS">CY/CFS</mat-option>
-    <mat-option value="CY/CY">CY/CY</mat-option>
-    <mat-option value="CY/DOOR">CY/DOOR</mat-option>
-    <mat-option value="Door to Door">Door to Door</mat-option>
-    <mat-option value="Door to Port">Door to Port</mat-option>
-    <mat-option value="EX-WORK">EX-WORK</mat-option>
-    <mat-option value="Port to Door">Port to Door</mat-option>
-    <mat-option value="Port to Port">Port to Port</mat-option>
-  </mat-select>
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <mat-select name="shipment_type" id="shipment_type" placeholder="Shipment Type">
-    <mat-option value="FCL">FCL</mat-option>
-  </mat-select>
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <mat-select name="original_hbl_required" id="original_hbl_required" placeholder="Original HB/L Required">
-    <mat-option value="No">No</mat-option>
-    <mat-option value="Yes">Yes</mat-option>
-  </mat-select>
-</mat-form-field>
-<mat-form-field class="input-full-width">
-  <input matInput name="mbl_no" id="mbl_no" placeholder="MB/L No." value="" />
-</mat-form-field>
+<h2 class="titlepage"><button mat-button (click)="openDialog()" style="text-transform:uppercase;font-size:1.5em;">General</button></h2>
+<mat-card>
+  <mat-card-content>
+    <div class="container">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutGap.xs="0">
+        <div fxFlex="50%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="D/O No." value="{{do_no}}" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="HB/L No." value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Transit HB/L" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Shipment Code" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="File/Job No." value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Service code" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Shipment Type" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="MB/L No." value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Cus. Declaration No" value="" disabled />
+          </mat-form-field>
+          <mat-horizontal-stepper>
+            <mat-step>
+                <ng-template matStepLabel>Shipment Status</ng-template>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel></ng-template>
+          </mat-step>
+          </mat-horizontal-stepper>
+        </div>
+        <div fxFlex="50%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Posting date" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Transaction code" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Agent Ref." value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="P.O. No." value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Contract No." value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="A/N: 1st Sending Date" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="A/N: 2nd Sending Date" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="A/N: 3rd Sending Date" value="" disabled />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Original HBL Required" value="" disabled />
+          </mat-form-field>
+          <mat-horizontal-stepper>
+            <mat-step>
+                <ng-template matStepLabel>Payment Status</ng-template>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel></ng-template>
+          </mat-step>
+          </mat-horizontal-stepper>
+          </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

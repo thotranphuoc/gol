@@ -5,4 +5,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .titlepage{color:#00f;font-size: 18px;text-transform: uppercase;text-align: center;padding: 10px 0;}
 .form {min-width: 150px;max-width: 1000px;width: 100%;}  
 .input-full-width {width: 100%;}
-
+.fl{float: left;}
+.fr{float:right;}
+.mat-step-icon-state-number{display: none;}
+@media screen and (max-width:568px){
+    .w100{width:100% !important;}
+}

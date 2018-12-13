@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule, BREAKPOINT } from '@angular/flex-layout';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { MaterialModule } from '../shares/material.module';
 import { ExampleMaterialComponent } from './example-material/example-material.component';
@@ -34,6 +36,13 @@ import { InboundSeaFreightDOCommunicationComponent } from './inbound-sea-freight
 import { InboundSeaFreightDOComponent } from './inbound-sea-freight-do/inbound-sea-freight-do.component';
 
 // var app = firebase.initializeApp(firebaseConf);
+
+const PRINT_BREAKPOINTS = [{
+  alias: 'xs.print',
+  suffix: 'XsPrint',
+  mediaQuery: 'print and (max-width: 297px)',
+  overlapping: false
+}];
 
 @NgModule({
   declarations: [
@@ -68,9 +77,11 @@ import { InboundSeaFreightDOComponent } from './inbound-sea-freight-do/inbound-s
     AngularFireModule.initializeApp(firebaseConf),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatStepperModule,
+    MatDialogModule
   ],
-  providers: [],
+  providers: [{provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true}],
   bootstrap: [AppComponent],
   entryComponents:[
     StopTrainingCompoent
