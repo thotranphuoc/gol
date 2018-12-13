@@ -12,6 +12,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatInputModule} from '@angular/material';
+import { MatFormFieldModule } from '@angular/material';
 
 import { MaterialModule } from '../shares/material.module';
 import { ExampleMaterialComponent } from './example-material/example-material.component';
@@ -36,6 +38,7 @@ import { InboundSeaFreightDORoutingComponent } from './inbound-sea-freight-do-ro
 import { InboundSeaFreightDOCargoComponent } from './inbound-sea-freight-do-cargo/inbound-sea-freight-do-cargo.component';
 import { InboundSeaFreightDOCommunicationComponent } from './inbound-sea-freight-do-communication/inbound-sea-freight-do-communication.component';
 import { InboundSeaFreightDOComponent } from './inbound-sea-freight-do/inbound-sea-freight-do.component';
+import { InbountSeaFreightDoRoutingEditComponent } from './inbount-sea-freight-do-routing-edit/inbount-sea-freight-do-routing-edit.component';
 
 // var app = firebase.initializeApp(firebaseConf);
 
@@ -67,7 +70,8 @@ const PRINT_BREAKPOINTS = [{
     InboundSeaFreightDORoutingComponent,
     InboundSeaFreightDOCargoComponent,
     InboundSeaFreightDOCommunicationComponent,
-    InboundSeaFreightDOComponent
+    InboundSeaFreightDOComponent,
+    InbountSeaFreightDoRoutingEditComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +87,9 @@ const PRINT_BREAKPOINTS = [{
     MatStepperModule,
     MatDialogModule,
     MatListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [{provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true}],
   bootstrap: [AppComponent],

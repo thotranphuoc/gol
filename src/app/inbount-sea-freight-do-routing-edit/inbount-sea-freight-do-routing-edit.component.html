@@ -1,0 +1,108 @@
+<h2 class="titlepage">Routing</h2>
+<mat-card>
+    <mat-card-content>
+      <div class="container">
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
+          <div fxFlex="50%" fxFlex.xs="100%">
+            <div style="height:1.7em;">&nbsp;</div>  
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Origin Code" value="" />
+              <button mat-button matSuffix mat-icon-button aria-label="Search Origin Code">
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Origin Name" value="" />
+            </mat-form-field> 
+            <div style="height:1.7em;">&nbsp;</div>  
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Discharge Code" value="" />
+              <button mat-button matSuffix mat-icon-button aria-label="Search Discharge Code">
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Discharge Name" value="" />
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+              <mat-select mat placeholder="Favorite Port">
+                <mat-option value="AWP">AWP - ANTWERP</mat-option>
+                <mat-option value="KEELUNG">KEELUNG - KEELUNG</mat-option>
+                <mat-option value="TAICHUNG">TAICHUNG - TAICHUNG</mat-option>
+                <mat-option value="SMS03123">SMS03123 - SOUTHAMPTON</mat-option>
+                <mat-option value="BUSAN">BUSAN - BUSAN</mat-option>
+                <mat-option value="SH">SH - SHANGHAI</mat-option>
+                <mat-option value="HPH">HPH - HAIPHONG</mat-option>
+                <mat-option value="LOB">LOB - LONG BEACH</mat-option>
+                <mat-option value="AN">AN - ANCONA</mat-option>
+                <mat-option value="SGN">SGN - HO CHI MINH CITY</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-checkbox color="primary">Same as discharging</mat-checkbox>
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Final Dest" value="" />
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Vessel" value="" />
+            </mat-form-field>
+          </div>
+          <div fxFlex="50%" fxFlex.xs="100%">
+            <mat-checkbox color="primary">Same as origin</mat-checkbox>  
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Port of Loading Code" value="" />
+              <button mat-button matSuffix mat-icon-button aria-label="Search Port of Loading Code">
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Port of Loading Name" value="" />
+            </mat-form-field>               
+            <mat-checkbox color="primary">Same as discharging</mat-checkbox>  
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Place of Delivery Code" value="" />
+              <button mat-button matSuffix mat-icon-button aria-label="Search Place of Delivery Code">
+                <mat-icon>search</mat-icon>
+              </button>
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Place of Delivery Name" value="" />
+            </mat-form-field>
+            <mat-form-field class="input-full-width">
+              <mat-select mat placeholder="Favorite Port">
+                <mat-option value="AWP">AWP - ANTWERP</mat-option>
+                <mat-option value="KEELUNG">KEELUNG - KEELUNG</mat-option>
+                <mat-option value="TAICHUNG">TAICHUNG - TAICHUNG</mat-option>
+                <mat-option value="SMS03123">SMS03123 - SOUTHAMPTON</mat-option>
+                <mat-option value="BUSAN">BUSAN - BUSAN</mat-option>
+                <mat-option value="SH">SH - SHANGHAI</mat-option>
+                <mat-option value="HPH">HPH - HAIPHONG</mat-option>
+                <mat-option value="LOB">LOB - LONG BEACH</mat-option>
+                <mat-option value="AN">AN - ANCONA</mat-option>
+                <mat-option value="SGN">SGN - HO CHI MINH CITY</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div style="height:1.7em;">&nbsp;</div>
+            <mat-form-field class="input-full-width">
+              <mat-select mat placeholder="CFS Terminal">
+                <mat-option value="CFS HAI AN">CFS HAI AN</mat-option>
+                <mat-option value="CFS TAI NHA">CFS TAI NHA</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field class="input-half-width">
+              <input matInput placeholder="Voy" value="" />
+            </mat-form-field>
+            <mat-form-field class="input-half-width">
+                <input matInput [matDatepicker]="eta" placeholder="ETA">
+                <mat-datepicker-toggle matSuffix [for]="eta"></mat-datepicker-toggle>
+                <mat-datepicker #eta></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayoutGap="2%" fxLayoutAlign="center center">
+          <button mat-raised-button color="primary">Save</button>
+          <button mat-raised-button color="warn">Apply All Docs</button>
+          <button mat-raised-button (click)="cancel()">Cancel</button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
