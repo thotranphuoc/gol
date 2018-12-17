@@ -1,0 +1,12 @@
+#container{
+    display: flex;
+    flex: 1;
+}
+
+#partiesComponent{
+    flex:1;
+}
+
+#generalComponent{
+    flex:1;
+}
