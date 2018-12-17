@@ -1,4 +1,4 @@
-<h2 class="titlepage">General</h2>
+<!-- <h2 class="titlepage">General</h2>
 <mat-card>
   <mat-card-content>
     <div class="container">
@@ -119,4 +119,7 @@
       </div>
     </div>
   </mat-card-content>
-</mat-card>
+</mat-card> -->
+
+test
+{{GENERAL | json}}
