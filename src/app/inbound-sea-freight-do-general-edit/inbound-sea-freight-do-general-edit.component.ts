@@ -1,5 +1,6 @@
 import { Component, Inject } from "@angular/core";
 import { MAT_DIALOG_DATA } from '@angular/material';
+import { iGeneral } from "../interfaces/general.interface";
 
 // export class InboundSeaFreightDOGeneralEditComponent {
 
@@ -48,7 +49,7 @@ import { MAT_DIALOG_DATA } from '@angular/material';
   templateUrl: './inbound-sea-freight-do-general-edit.component.html',
 })
 export class InboundSeaFreightDOGeneralEditComponent {
-  GENERAL: any;
+  GENERAL: iGeneral;
   constructor( @Inject(MAT_DIALOG_DATA) public data: any) {
     this.GENERAL = data;
     console.log(this.GENERAL);
