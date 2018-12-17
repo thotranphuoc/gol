@@ -4,16 +4,16 @@
     <div class="container">
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
         <div fxFlex="50%" fxFlex.xs="100%">
-            <mat-form-field class="input-full-width">
-                <input [(ngModel)]="GENERAL.do_no" name="do_no" matInput placeholder="D/O No." value=""  />
-              </mat-form-field>
-              <mat-form-field class="input-full-width">
-                <mat-select placeholder="D/O Type">
-                  <mat-option value="D/O Draft">D/O Draft</mat-option>
-                  <mat-option value="D/O Information">D/O Information</mat-option>
-                  <mat-option value="D/O Template">D/O Template</mat-option>
-                </mat-select>
-              </mat-form-field>
+          <!-- <mat-form-field class="input-full-width">
+            <input [(ngModel)]="GENERAL.do_no" name="do_no" matInput placeholder="D/O No." value="" />
+          </mat-form-field> -->
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="D/O Type">
+              <mat-option value="D/O Draft">D/O Draft</mat-option>
+              <mat-option value="D/O Information">D/O Information</mat-option>
+              <mat-option value="D/O Template">D/O Template</mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
       </div>
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
@@ -67,50 +67,50 @@
           </mat-form-field>
         </div>
         <div fxFlex="50%" fxFlex.xs="100%">
-            <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="posting_date" placeholder="Posting date">
-                <mat-datepicker-toggle matSuffix [for]="posting_date"></mat-datepicker-toggle>
-                <mat-datepicker #posting_date></mat-datepicker>
-            </mat-form-field>
-            <mat-form-field class="input-full-width">
-                <input matInput placeholder="P.O No." value="" />
-              </mat-form-field>
-            <mat-form-field class="input-full-width">
-              <mat-select placeholder="Transaction Code">
-                <mat-option value="Undefined">Undefined</mat-option>
-                <mat-option value="CIF">CIF</mat-option>
-                <mat-option value="DELIVERY DUTY P">DELIVERY DUTY P</mat-option>
-                <mat-option value="DELIVERY DUTY">DELIVERY DUTY</mat-option>
-                <mat-option value="EX-WORK">EX-WORK</mat-option>
-                <mat-option value="FOB">FOB</mat-option>
-                <mat-option value="Transaction A">Transaction A</mat-option>
-              </mat-select>
-            </mat-form-field>
-            <mat-form-field class="input-full-width">
-              <input matInput placeholder="Agent Ref" value="" />
-            </mat-form-field>
-            <mat-form-field class="input-full-width">
-              <input matInput placeholder="Contract No." value="" />
-            </mat-form-field>
-            <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="an1st_sendingdate" placeholder="A/N: 1st Sending Date">
-                <mat-datepicker-toggle matSuffix [for]="an1st_sendingdate"></mat-datepicker-toggle>
-                <mat-datepicker #an1st_sendingdate></mat-datepicker>
-            </mat-form-field>
-            <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="an2nd_sendingdate" placeholder="A/N: 2nd Sending Date">
-                <mat-datepicker-toggle matSuffix [for]="an2nd_sendingdate"></mat-datepicker-toggle>
-                <mat-datepicker #an2nd_sendingdate></mat-datepicker>
-            </mat-form-field>
-            <mat-form-field class="input-full-width">
-                <input matInput [matDatepicker]="an3rd_sendingdate" placeholder="A/N: 3rd Sending Date">
-                <mat-datepicker-toggle matSuffix [for]="an3rd_sendingdate"></mat-datepicker-toggle>
-                <mat-datepicker #an3rd_sendingdate></mat-datepicker>
-            </mat-form-field>
-            <mat-form-field class="input-full-width">
-              <input matInput placeholder="Cus. Declaration No" value="" />
-            </mat-form-field>
-          </div>
+          <mat-form-field class="input-full-width">
+            <input matInput [matDatepicker]="posting_date" placeholder="Posting date">
+            <mat-datepicker-toggle matSuffix [for]="posting_date"></mat-datepicker-toggle>
+            <mat-datepicker #posting_date></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="P.O No." value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Transaction Code">
+              <mat-option value="Undefined">Undefined</mat-option>
+              <mat-option value="CIF">CIF</mat-option>
+              <mat-option value="DELIVERY DUTY P">DELIVERY DUTY P</mat-option>
+              <mat-option value="DELIVERY DUTY">DELIVERY DUTY</mat-option>
+              <mat-option value="EX-WORK">EX-WORK</mat-option>
+              <mat-option value="FOB">FOB</mat-option>
+              <mat-option value="Transaction A">Transaction A</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Agent Ref" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Contract No." value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput [matDatepicker]="an1st_sendingdate" placeholder="A/N: 1st Sending Date">
+            <mat-datepicker-toggle matSuffix [for]="an1st_sendingdate"></mat-datepicker-toggle>
+            <mat-datepicker #an1st_sendingdate></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput [matDatepicker]="an2nd_sendingdate" placeholder="A/N: 2nd Sending Date">
+            <mat-datepicker-toggle matSuffix [for]="an2nd_sendingdate"></mat-datepicker-toggle>
+            <mat-datepicker #an2nd_sendingdate></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput [matDatepicker]="an3rd_sendingdate" placeholder="A/N: 3rd Sending Date">
+            <mat-datepicker-toggle matSuffix [for]="an3rd_sendingdate"></mat-datepicker-toggle>
+            <mat-datepicker #an3rd_sendingdate></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Cus. Declaration No" value="" />
+          </mat-form-field>
+        </div>
       </div>
       <div fxLayout="row" fxLayoutGap="2%" fxLayoutAlign="center center">
         <button mat-raised-button color="primary" id="save_general">Save</button>

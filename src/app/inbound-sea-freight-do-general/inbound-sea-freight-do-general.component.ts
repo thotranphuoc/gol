@@ -2,30 +2,31 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { InboundSeaFreightDOGeneralEditComponent } from '../inbound-sea-freight-do-general-edit/inbound-sea-freight-do-general-edit.component';
 import { iGeneral } from '../interfaces/general.interface';
+import { LocalService } from '../services/local.service';
 
 
-export interface DialogData {
-  do_no: string;
-  do_type: string;
-  doc_name: string;
-  hbl_no: string;
-  transit_hbl: string;
-  filejob_no: string;
-  shipment_code: string;
-  service_code: string;
-  shipment_type: string;
-  original_hbl_required: string;
-  mbl_no: string;
-  posting_date: Date;
-  po_no: string;
-  transaction_code: string;
-  agent_ref: string;
-  contract_no: string;
-  an1st_sendingdate: Date;
-  an2nd_sendingdate: Date;
-  an3rd_sendingdate: Date;
-  cus_declaration_no: string;
-}
+// export interface DialogData {
+//   do_no: string;
+//   do_type: string;
+//   doc_name: string;
+//   hbl_no: string;
+//   transit_hbl: string;
+//   filejob_no: string;
+//   shipment_code: string;
+//   service_code: string;
+//   shipment_type: string;
+//   original_hbl_required: string;
+//   mbl_no: string;
+//   posting_date: Date;
+//   po_no: string;
+//   transaction_code: string;
+//   agent_ref: string;
+//   contract_no: string;
+//   an1st_sendingdate: Date;
+//   an2nd_sendingdate: Date;
+//   an3rd_sendingdate: Date;
+//   cus_declaration_no: string;
+// }
 @Component({
   selector: 'app-inbound-sea-freight-do-general',
   templateUrl: './inbound-sea-freight-do-general.component.html',
@@ -88,30 +89,33 @@ export interface DialogData {
 // }
 
 export class InboundSeaFreightDOGeneralComponent implements OnInit {
-  // do_no: string;
-  // do_type: string;
-  // doc_name: string;
-  // hbl_no: string;
-  // transit_hbl: string;
-  // filejob_no: string;
-  // shipment_code: string;
-  // service_code: string;
-  // shipment_type: string;
-  // original_hbl_required: string;
-  // mbl_no: string;
-  // posting_date: Date;
-  // po_no: string;
-  // transaction_code: string;
-  // agent_ref: string;
-  // contract_no: string;
-  // an1st_sendingdate: Date;
-  // an2nd_sendingdate: Date;
-  // an3rd_sendingdate: Date;
-  // cus_declaration_no: string;
-  GENERAL: iGeneral
+  do_no: string;
+  do_type: string;
+  doc_name: string;
+  hbl_no: string;
+  transit_hbl: string;
+  filejob_no: string;
+  shipment_code: string;
+  service_code: string;
+  shipment_type: string;
+  original_hbl_required: string;
+  mbl_no: string;
+  posting_date: Date;
+  po_no: string;
+  transaction_code: string;
+  agent_ref: string;
+  contract_no: string;
+  an1st_sendingdate: Date;
+  an2nd_sendingdate: Date;
+  an3rd_sendingdate: Date;
+  cus_declaration_no: string;
+  GENERAL: iGeneral;
   constructor(
     private dialog: MatDialog,
-  ) { }
+    private localService: LocalService
+  ) {
+    this.GENERAL = this.localService.GENERAL_DAFAULT;
+  }
 
   ngOnInit() {
   }
