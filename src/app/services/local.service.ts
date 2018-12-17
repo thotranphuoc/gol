@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { iGeneral } from '../interfaces/general.interface';
+import { iPaties } from '../interfaces/parties.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +30,26 @@ export class LocalService {
     an2nd_sendingdate: new Date(),
     an3rd_sendingdate: new Date(),
     cus_declaration_no: ''
+  }
+
+  PARTIES_DEFAULT: iPaties = {
+    shipper_code: '',
+    shipper_name: '',
+    shipper_address: '',
+    shipper_email: '',
+    consignee_code: '',
+    consignee_name: '',
+    consignee_address: '',
+    consignee_email: '',
+    actual_consignee_code: '',
+    actual_consignee_name: '',
+    actual_consignee_address: '',
+    billto_code: '',
+    billto_name: '',
+    billto_address: '',
+    notifypart1_name: '',
+    notifypart1_address: '',
+    notifypart2_name: '',
+    notifypart2_address: ''
   }
 }

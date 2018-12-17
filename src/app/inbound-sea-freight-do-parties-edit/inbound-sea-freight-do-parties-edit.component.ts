@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material';
+import { iPaties } from '../interfaces/parties.interface';
+
 
 @Component({
   selector: 'app-inbound-sea-freight-do-parties-edit',
@@ -6,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inbound-sea-freight-do-parties-edit.component.css']
 })
 export class InboundSeaFreightDoPartiesEditComponent implements OnInit {
-
-  constructor() { }
+  PARTIES: iPaties;
+  constructor( @Inject(MAT_DIALOG_DATA) public data: any) {
+    this.PARTIES = data;
+    console.log(this.PARTIES);
+  }
 
   ngOnInit() {
   }

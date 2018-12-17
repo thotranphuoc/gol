@@ -14,14 +14,15 @@ export class SidenavListComponent implements OnInit, OnDestroy {
   constructor( private authService: AuthService) { }
 
   Components1 = [
-    {title: 'Main', routerLink: '/inbound-sea-freightDO', icon: 'face'},
-    {title: 'General', routerLink: '/inbound-sea-freightDO-general', icon: 'face'},
-    {title: 'Parties', routerLink: '/inbound-sea-freightDO-parties', icon: 'face'},
-    {title: 'Routing', routerLink: '/inbound-sea-freightDO-routing', icon: 'face'},
-    {title: 'Cargo', routerLink: '/inbound-sea-freightDO-cargo', icon: 'face'},
-    {title: 'Communication', routerLink: '/inbound-sea-freightDO-communication', icon: 'face'},
-    // {title: 'Signup', routerLink: '/signup', icon: 'face'},
-    // {title: 'Login', routerLink: '/login', icon: 'input'},
+    {title: 'List', routerLink: '/inbound-sea-freightDO-list', icon: 'face'},
+    {title: 'Create New', routerLink: '/inbound-sea-freightDO', icon: 'face'},
+    // {title: 'General', routerLink: '/inbound-sea-freightDO-general', icon: 'face'},
+    // {title: 'Parties', routerLink: '/inbound-sea-freightDO-parties', icon: 'face'},
+    // {title: 'Routing', routerLink: '/inbound-sea-freightDO-routing', icon: 'face'},
+    // {title: 'Cargo', routerLink: '/inbound-sea-freightDO-cargo', icon: 'face'},
+    // {title: 'Communication', routerLink: '/inbound-sea-freightDO-communication', icon: 'face'},
+    // // {title: 'Signup', routerLink: '/signup', icon: 'face'},
+    // // {title: 'Login', routerLink: '/login', icon: 'input'},
   ]
 
   Components2 = [

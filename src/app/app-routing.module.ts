@@ -12,9 +12,11 @@ import { InboundSeaFreightDORoutingComponent } from './inbound-sea-freight-do-ro
 import { InboundSeaFreightDOCargoComponent } from './inbound-sea-freight-do-cargo/inbound-sea-freight-do-cargo.component';
 import { InboundSeaFreightDOCommunicationComponent } from './inbound-sea-freight-do-communication/inbound-sea-freight-do-communication.component';
 import { InboundSeaFreightDOComponent } from './inbound-sea-freight-do/inbound-sea-freight-do.component';
+import { InboundSeaFreightDOListComponent } from './inbound-sea-freight-do-list/inbound-sea-freight-do-list.component';
 
 const routes: Routes = [
 { path:'', component: InboundSeaFreightDOComponent },
+{ path:'inbound-sea-freightDO-list', component: InboundSeaFreightDOListComponent },
 { path:'inbound-sea-freightDO', component: InboundSeaFreightDOComponent },
 { path:'inbound-sea-freightDO-general', component: InboundSeaFreightDOGeneralComponent },
 { path:'inbound-sea-freightDO-parties', component: InboundSeaFreightDOPartiesComponent },
