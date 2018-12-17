@@ -5,9 +5,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .titlepage{color:#00f;font-size: 1.3em;text-transform: uppercase;text-align: center;padding: 10px 0;}
 .form {min-width: 150px;max-width: 1000px;width: 100%;}  
 .input-full-width {width: 100%;}
-.input-half-width {width: 48%;margin-right: 10px;}
+.input-half-width {width: 48%;margin-right: 2%;}
 .input-34-width{width:34%;margin-right: 10px;}
-.input-14-width{width:12%;}
+.input-14-width{width:12.5%;}
+.input-25-width{width:25%;}
 .margin-checkbox{margin:0 10px;}
 #mat-checkbox-4 .mat-checkbox-layout,#mat-checkbox-6 .mat-checkbox-layout,#mat-checkbox-8 .mat-checkbox-layout,#mat-checkbox-9 .mat-checkbox-layout{margin-top:-70px;}
 .fl{float: left;}
@@ -20,4 +21,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .input-half-width {width: 100%;margin-right: 0;}
     .input-34-width{width:100%;margin-right: 0;}
     .input-14-width{width:100%;}
+    .input-25-width{width:100%;}
 }

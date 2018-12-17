@@ -1,3 +1,297 @@
-<p>
-  inbound-sea-freight-do-list works!
-</p>
+<mat-card>
+  <mat-card-content>
+    <div class="container">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+        <div fxFlex="25%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="File/Job No.">
+              <mat-option value="">Code</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="D/O No.">
+              <mat-option value="">Code</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="HBL No.">
+              <mat-option value="">Code</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="D/O Type">
+              <mat-option value="D/O Draft">D/O Draft</mat-option>
+              <mat-option value="D/O Information">D/O Information</mat-option>
+              <mat-option value="D/O Template">D/O Template</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Doc Name" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="M.B/L" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Shipment Code" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="P.O.No" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Container No" value="" />
+          </mat-form-field>
+        </div>
+        <div fxFlex="25%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="M.Freight term">
+              <mat-option value="Collect">Collect</mat-option>
+              <mat-option value="Prepaid">Prepaid</mat-option>
+              <mat-option value="To be advised">To be advised</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Shipment Type">
+              <mat-option value="Breakbulk">Breakbulk</mat-option>
+              <mat-option value="FCL">FCL</mat-option>
+              <mat-option value="LCL">LCL</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Shiment Status">
+              <mat-option value="Arrival">Arrival</mat-option>
+              <mat-option value="Cargo released">Cargo released</mat-option>
+              <mat-option value="CDS deivered to carrier">CDS deivered to carrier</mat-option>
+              <mat-option value="CDS returned to customer">CDS returned to customer</mat-option>
+              <mat-option value="D/O released">D/O released</mat-option>
+              <mat-option value="Delivered to consignee">Delivered to consignee</mat-option>
+              <mat-option value="On hold">On hold</mat-option>
+              <mat-option value="Original HBL Released">Original HBL Released</mat-option>
+              <mat-option value="Passed border">Passed border</mat-option>
+              <mat-option value="Pending">Pending</mat-option>
+              <mat-option value="Pending for dispute">Pending for dispute</mat-option>
+              <mat-option value="Ready for export">Ready for export</mat-option>
+              <mat-option value="Ready for release">Ready for release</mat-option>
+              <mat-option value="Received from shipper">Received from shipper</mat-option>
+              <mat-option value="Shipped on board">Shipped on board</mat-option>
+              <mat-option value="Surrendered HBL Released">Surrendered HBL Released</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Payment Status">
+              <mat-option value="Canceled">Canceled</mat-option>
+              <mat-option value="Confirm">Confirm</mat-option>
+              <mat-option value="Issued">Issued</mat-option>
+              <mat-option value="Open">Open</mat-option>
+              <mat-option value="Paid">Paid</mat-option>
+              <mat-option value="Partial Paid">Partial Paid</mat-option>
+              <mat-option value="Pending">Pending</mat-option>
+              <mat-option value="UnPaid">UnPaid</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Shipper">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Shipper">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Cnee">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Cnee">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Carrier">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Carrier">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Handling Agent">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Handling Agent">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div fxFlex="25%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Cargo Source">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Cargo Source">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Sales man">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Sales man">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Vessel" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Voy." value="" />
+          </mat-form-field>
+
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Port of receipt">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Port of receipt">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Port of loading">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Port of loading">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Port of discharge">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Port of discharge">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Final Destination">
+              <mat-option value="">Code | Name</mat-option>
+            </mat-select>
+            <button mat-button matSuffix mat-icon-button aria-label="Search Final Destination">
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div fxFlex="25%" fxFlex.xs="100%">
+          <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="posting_date_from" placeholder="Posting date from">
+                <mat-datepicker-toggle matSuffix [for]="posting_date_from"></mat-datepicker-toggle>
+                <mat-datepicker #posting_date_from></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="posting_date_to" placeholder="Posting date to">
+                <mat-datepicker-toggle matSuffix [for]="posting_date_to"></mat-datepicker-toggle>
+                <mat-datepicker #posting_date_to></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+          <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="creat_date_from" placeholder="Create date from">
+                <mat-datepicker-toggle matSuffix [for]="creat_date_from"></mat-datepicker-toggle>
+                <mat-datepicker #creat_date_from></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="creat_date_to" placeholder="Creat date to">
+                <mat-datepicker-toggle matSuffix [for]="creat_date_to"></mat-datepicker-toggle>
+                <mat-datepicker #creat_date_to></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+          <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="etd_from" placeholder="ETD from">
+                <mat-datepicker-toggle matSuffix [for]="etd_from"></mat-datepicker-toggle>
+                <mat-datepicker #etd_from></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="etd_to" placeholder="ETD to">
+                <mat-datepicker-toggle matSuffix [for]="etd_to"></mat-datepicker-toggle>
+                <mat-datepicker #etd_to></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+          <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="eta_from" placeholder="ETA from">
+                <mat-datepicker-toggle matSuffix [for]="eta_from"></mat-datepicker-toggle>
+                <mat-datepicker #eta_from></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="eta_to" placeholder="ETA to">
+                <mat-datepicker-toggle matSuffix [for]="eta_to"></mat-datepicker-toggle>
+                <mat-datepicker #eta_to></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+          <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="do_rls_from" placeholder="DO RLS from">
+                <mat-datepicker-toggle matSuffix [for]="do_rls_from"></mat-datepicker-toggle>
+                <mat-datepicker #do_rls_from></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%">
+              <mat-form-field class="input-full-width">
+                <input matInput [matDatepicker]="do_rls_to" placeholder="DO RLS to">
+                <mat-datepicker-toggle matSuffix [for]="do_rls_to"></mat-datepicker-toggle>
+                <mat-datepicker #do_rls_to></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Cus. Declaration No" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Contract No" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Original HBL Required">
+              <mat-option value="No">No</mat-option>
+              <mat-option value="Yes">Yes</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- Thong so -->
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
+        <div fxFlex="100%" fxFlex.xs="100%">
+            <mat-form-field class="fl">
+                <mat-select placeholder="Rows 30">
+                  <mat-option value="30" selected>Rows 30</mat-option>
+                  <mat-option value="50">Rows 50</mat-option>
+                  <mat-option value="100">Rows 100</mat-option>
+                  <mat-option value="500">Rows 500</mat-option>
+                  <mat-option value="1000">Rows 1000</mat-option>
+                  <mat-option value="2000">Rows 2000</mat-option>
+                  <mat-option value="5000">Rows 5000</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <button mat-raised-button class="fr">Export</button>
+              <button mat-raised-button class="fr margin-checkbox">View Recycle Bin</button>
+              
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
