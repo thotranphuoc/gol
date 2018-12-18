@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InboundSeaFreightDoListTableComponent implements OnInit {
 
   displayedColumns =
-    [ 'name', 'position', 'weight', 'symbol', 'position','weight', 'symbol', 'position', 'weight', 'symbol', 'position', 'weight', 'symbol','position', 'weight', 'symbol', 'position', 'weight', 'symbol','position', 'weight', 'symbol', 'position','weight', 'symbol', 'position', 'weight', 'symbol', 'position', 'weight', 'symbol','position', 'weight', 'symbol', 'position', 'weight', 'symbol', 'star'];
+    ['filejob_no', 'hbl_no', 'mbl', 'do_no', 'shipper', 'cnee', 'carrier', 'handling_agent', 'por', 'pol', 'pod', 'final_destination', 'vessel', 'voy', 'etd', 'eta', 'original_hbl_required', 'freight_term', 'shipment_type', 'shipment_status', 'payment_status', 'hbl_type', 'hbl_name', 'shipment_code', 'cargo_source', 'cus_declaration_no', 'po_no', 'contract_no', 'salesman', 'posting_date', 'created_by', 'on1', 'last_update', 'on2'];
   dataSource = ELEMENT_DATA;
 
   ngOnInit() {
@@ -16,22 +16,88 @@ export class InboundSeaFreightDoListTableComponent implements OnInit {
   }
 }
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+export interface ListTableElement {
+  filejob_no: string;
+  hbl_no: string;
+  mbl: string;
+  do_no: string;
+  shipper: string;
+  cnee: string;
+  carrier: string;
+  handling_agent: string;
+  por: string;
+  pol: string;
+  pod: string;
+  final_destination: string;
+  vessel: string;
+  voy: string;
+  etd: string;
+  eta: string;
+  original_hbl_required: string;
+  freight_term: string;
+  shipment_type: string;
+  shipment_status: string;
+  payment_status: string;
+  hbl_type: string;
+  hbl_name: string;
+  shipment_code: string;
+  cargo_source: string;
+  cus_declaration_no: string;
+  po_no: string;
+  contract_no: string;
+  salesman: string;
+  posting_date: string;
+  created_by: string;
+  on1: string;
+  last_update: string;
+  on2: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+const ELEMENT_DATA: ListTableElement[] = [
+  // {
+  //   filejob_no: 'Test DO 1111',
+  //   hbl_no: 'HBL No 1111',
+  //   mbl: 'MBL Test',
+  //   do_no: 'DO 1234',
+  //   shipper: 'Shipper 123',
+  //   cnee: 'Cnee 123',
+  //   carrier: 'Carrier 123',
+  //   handling_agent: 'HA 123456',
+  //   por: '123476',
+  //   pol: '123456',
+  //   pod: '1234567',
+  //   final_destination: 'HAi Phong',
+  //   vessel: '12345676',
+  //   voy: '345677',
+  //   etd: '234568',
+  //   eta: '23456868',
+  //   original_hbl_required: '36353553',
+  //   freight_term: 'hhrhryr4646',
+  //   shipment_type: '64646464',
+  //   shipment_status: '464646464',
+  //   payment_status: 'Done',
+  //   hbl_type: 'DO Template',
+  //   hbl_name: 'DO Name',
+  //   shipment_code: '123456',
+  //   cargo_source: 'rryryry',
+  //   cus_declaration_no: '44646464',
+  //   po_no: 'po no ưe',
+  //   contract_no: '234567',
+  //   salesman: 'Teme',
+  //   posting_date: '11-23-2013',
+  //   created_by: 'userdemo',
+  //   on1: '3df86686',
+  //   last_update: '12-28-2013',
+  //   on2: 'hehehe34567'
+  // },
+  // { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
+  // { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
+  // { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
+  // { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
+  // { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
+  // { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
+  // { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
+  // { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
+  // { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
+  // { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
 ];

@@ -1,30 +1,182 @@
 <div class="example-container mat-elevation-z8">
   <table mat-table [dataSource]="dataSource">
 
-    <!-- Name Column -->
-    <ng-container matColumnDef="name" sticky>
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    <!-- File/Job No Column -->
+    <ng-container matColumnDef="filejob_no" sticky>
+      <th mat-header-cell *matHeaderCellDef> File/Job No </th>
+      <td mat-cell *matCellDef="let element"> {{element.filejob_no}} </td>
     </ng-container>
 
-    <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <th mat-header-cell *matHeaderCellDef> No. </th>
-      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    <!-- HBL No Column -->
+    <ng-container matColumnDef="hbl_no" sticky>
+      <th mat-header-cell *matHeaderCellDef> HBL No </th>
+      <td mat-cell *matCellDef="let element"> {{element.hbl_no}} </td>
     </ng-container>
 
-    <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <th mat-header-cell *matHeaderCellDef> Weight </th>
-      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    <!-- M.B/L Column -->
+    <ng-container matColumnDef="mbl" sticky>
+      <th mat-header-cell *matHeaderCellDef> M.B/L </th>
+      <td mat-cell *matCellDef="let element"> {{element.mbl}} </td>
     </ng-container>
 
-    <!-- Symbol Column -->
-    <ng-container matColumnDef="symbol">
-      <th mat-header-cell *matHeaderCellDef> Symbol </th>
-      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    <!-- D/O No Column -->
+    <ng-container matColumnDef="do_no" sticky>
+      <th mat-header-cell *matHeaderCellDef> D/O No </th>
+      <td mat-cell *matCellDef="let element"> {{element.do_no}} </td>
     </ng-container>
 
+    <!-- Shipper Column -->
+    <ng-container matColumnDef="shipper">
+      <th mat-header-cell *matHeaderCellDef> Shipper </th>
+      <td mat-cell *matCellDef="let element"> {{element.shipper}} </td>
+    </ng-container>
+
+    <!-- Cnee Column -->
+    <ng-container matColumnDef="cnee">
+      <th mat-header-cell *matHeaderCellDef> Cnee </th>
+      <td mat-cell *matCellDef="let element"> {{element.cnee}} </td>
+    </ng-container>
+    <!-- Carrier Column -->
+    <ng-container matColumnDef="carrier">
+      <th mat-header-cell *matHeaderCellDef> Carrier </th>
+      <td mat-cell *matCellDef="let element"> {{element.carrier}} </td>
+    </ng-container>
+    <!-- Handling Agent Column -->
+    <ng-container matColumnDef="handling_agent">
+      <th mat-header-cell *matHeaderCellDef> Handling Agent </th>
+      <td mat-cell *matCellDef="let element"> {{element.handling_agent}} </td>
+    </ng-container>
+    <!-- POR Column -->
+    <ng-container matColumnDef="por">
+      <th mat-header-cell *matHeaderCellDef> POR </th>
+      <td mat-cell *matCellDef="let element"> {{element.por}} </td>
+    </ng-container>
+    <!-- POL Column -->
+    <ng-container matColumnDef="pol">
+      <th mat-header-cell *matHeaderCellDef> POL </th>
+      <td mat-cell *matCellDef="let element"> {{element.pol}} </td>
+    </ng-container>
+    <!-- POD Column -->
+    <ng-container matColumnDef="pod">
+      <th mat-header-cell *matHeaderCellDef> POD </th>
+      <td mat-cell *matCellDef="let element"> {{element.pod}} </td>
+    </ng-container>
+    <!-- Final Destination Column -->
+    <ng-container matColumnDef="final_destination">
+      <th mat-header-cell *matHeaderCellDef> Final Destination </th>
+      <td mat-cell *matCellDef="let element"> {{element.final_destination}} </td>
+    </ng-container>
+    <!-- Vessel Column -->
+    <ng-container matColumnDef="vessel">
+      <th mat-header-cell *matHeaderCellDef> Vessel </th>
+      <td mat-cell *matCellDef="let element"> {{element.vessel}} </td>
+    </ng-container>
+    <!-- Voy. Column -->
+    <ng-container matColumnDef="voy">
+      <th mat-header-cell *matHeaderCellDef> Voy. </th>
+      <td mat-cell *matCellDef="let element"> {{element.voy}} </td>
+    </ng-container>
+    <!-- ETD Column -->
+    <ng-container matColumnDef="etd">
+      <th mat-header-cell *matHeaderCellDef> ETD </th>
+      <td mat-cell *matCellDef="let element"> {{element.etd}} </td>
+    </ng-container>
+    <!-- ETA Column -->
+    <ng-container matColumnDef="eta">
+      <th mat-header-cell *matHeaderCellDef> ETA </th>
+      <td mat-cell *matCellDef="let element"> {{element.eta}} </td>
+    </ng-container>
+    <!-- Original HBL Required Column -->
+    <ng-container matColumnDef="original_hbl_required">
+      <th mat-header-cell *matHeaderCellDef> Original HBL Required </th>
+      <td mat-cell *matCellDef="let element"> {{element.original_hbl_required}} </td>
+    </ng-container>
+    <!-- Freight Term Column -->
+    <ng-container matColumnDef="freight_term">
+      <th mat-header-cell *matHeaderCellDef> Freight Term </th>
+      <td mat-cell *matCellDef="let element"> {{element.freight_term}} </td>
+    </ng-container>
+    <!-- Shipment Type Column -->
+    <ng-container matColumnDef="shipment_type">
+      <th mat-header-cell *matHeaderCellDef> Shipment Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.shipment_type}} </td>
+    </ng-container>
+    <!-- Shipment Status Column -->
+    <ng-container matColumnDef="shipment_status">
+      <th mat-header-cell *matHeaderCellDef> Shipment Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.shipment_status}} </td>
+    </ng-container>
+    <!-- Payment Status Column -->
+    <ng-container matColumnDef="payment_status">
+      <th mat-header-cell *matHeaderCellDef> Payment Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.payment_status}} </td>
+    </ng-container>
+    <!-- H.B/L Type Column -->
+    <ng-container matColumnDef="hbl_type">
+      <th mat-header-cell *matHeaderCellDef> H.B/L Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.hbl_type}} </td>
+    </ng-container>
+    <!-- H.B/L Name Column -->
+    <ng-container matColumnDef="hbl_name">
+      <th mat-header-cell *matHeaderCellDef> H.B/L Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.hbl_name}} </td>
+    </ng-container>
+    <!-- Shipment code Column -->
+    <ng-container matColumnDef="shipment_code">
+      <th mat-header-cell *matHeaderCellDef> Shipment code </th>
+      <td mat-cell *matCellDef="let element"> {{element.shipment_code}} </td>
+    </ng-container>
+    <!-- Cargo source Column -->
+    <ng-container matColumnDef="cargo_source">
+      <th mat-header-cell *matHeaderCellDef> Cargo source </th>
+      <td mat-cell *matCellDef="let element"> {{element.cargo_source}} </td>
+    </ng-container>
+    <!-- Cus. Declaration No Column -->
+    <ng-container matColumnDef="cus_declaration_no">
+      <th mat-header-cell *matHeaderCellDef> Cus. Declaration No </th>
+      <td mat-cell *matCellDef="let element"> {{element.cus_declaration_no}} </td>
+    </ng-container>
+    <!-- P.O.No Column -->
+    <ng-container matColumnDef="po_no">
+      <th mat-header-cell *matHeaderCellDef> P.O.No </th>
+      <td mat-cell *matCellDef="let element"> {{element.po_no}} </td>
+    </ng-container>
+    <!-- Contract No Column -->
+    <ng-container matColumnDef="contract_no">
+      <th mat-header-cell *matHeaderCellDef> Contract No </th>
+      <td mat-cell *matCellDef="let element"> {{element.contract_no}} </td>
+    </ng-container>
+    <!-- Salesman Column -->
+    <ng-container matColumnDef="salesman">
+      <th mat-header-cell *matHeaderCellDef> Salesman </th>
+      <td mat-cell *matCellDef="let element"> {{element.salesman}} </td>
+    </ng-container>
+    <!-- Posting Date Column -->
+    <ng-container matColumnDef="posting_date">
+      <th mat-header-cell *matHeaderCellDef> Posting Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.posting_date}} </td>
+    </ng-container>
+    <!-- Created By Column -->
+    <ng-container matColumnDef="created_by">
+      <th mat-header-cell *matHeaderCellDef> Created By </th>
+      <td mat-cell *matCellDef="let element"> {{element.created_by}} </td>
+    </ng-container>
+    <!-- On 1 Column -->
+    <ng-container matColumnDef="on1">
+      <th mat-header-cell *matHeaderCellDef> On </th>
+      <td mat-cell *matCellDef="let element"> {{element.on1}} </td>
+    </ng-container>
+    <!-- Last Update Column -->
+    <ng-container matColumnDef="last_update">
+      <th mat-header-cell *matHeaderCellDef> Last Update </th>
+      <td mat-cell *matCellDef="let element"> {{element.last_update}} </td>
+    </ng-container>
+    <!-- On 2 Column -->
+    <ng-container matColumnDef="on2">
+      <th mat-header-cell *matHeaderCellDef> On </th>
+      <td mat-cell *matCellDef="let element"> {{element.on2}} </td>
+    </ng-container>
+    
     <!-- Star Column -->
     <ng-container matColumnDef="star" stickyEnd>
       <th mat-header-cell *matHeaderCellDef></th>
