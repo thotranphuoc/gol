@@ -44,6 +44,7 @@ import { InbountSeaFreightDoRoutingEditComponent } from './inbount-sea-freight-d
 import { InboundSeaFreightDOGeneralEditComponent } from './inbound-sea-freight-do-general-edit/inbound-sea-freight-do-general-edit.component';
 import { InboundSeaFreightDoPartiesEditComponent } from './inbound-sea-freight-do-parties-edit/inbound-sea-freight-do-parties-edit.component';
 import { InboundSeaFreightDOListComponent } from './inbound-sea-freight-do-list/inbound-sea-freight-do-list.component';
+import { InboundSeaFreightDoListTableComponent } from './inbound-sea-freight-do-list-table/inbound-sea-freight-do-list-table.component';
 
 // var app = firebase.initializeApp(firebaseConf);
 
@@ -79,7 +80,8 @@ const PRINT_BREAKPOINTS = [{
     InbountSeaFreightDoRoutingEditComponent,
     InboundSeaFreightDOGeneralEditComponent,
     InboundSeaFreightDoPartiesEditComponent,
-    InboundSeaFreightDOListComponent
+    InboundSeaFreightDOListComponent,
+    InboundSeaFreightDoListTableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,42 +1,60 @@
-<h2 class="titlepage"><button mat-button (click)="openDialogCommunication()" style="text-transform:uppercase;font-size:1.3em;">Communication</button></h2>
+<h2 class="titlepage"><button mat-button style="text-transform:uppercase;font-size:1.1em;">Communication</button></h2>
 <mat-card>
     <mat-card-content>
       <div class="container">
         <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
           <div fxFlex="50%" fxFlex.xs="100%">
-            <mat-form-field class="input-half-width">
-                <input matInput [matDatepicker]="last_free_storage" placeholder="Last free storage">
-                <mat-datepicker-toggle matSuffix [for]="last_free_storage"></mat-datepicker-toggle>
-                <mat-datepicker #last_free_storage></mat-datepicker>
-            </mat-form-field>
-            <mat-form-field class="input-half-width">
-              <mat-select placeholder="Source of cargo">
-                <mat-option value="Nomination">AWP - ANTWERP</mat-option>
-                <mat-option value="RO-Routing Order   ';';'">RO-Routing Order   ';';'</mat-option>
-                <mat-option value="SL-Sales Lead ...">SL-Sales Lead ...</mat-option>
-                <mat-option value="FH-Free hand">FH-Free hand</mat-option>
-                <mat-option value="CL-Coload">CL-Coload</mat-option>
-                <mat-option value="Consol">Consol</mat-option>
-                <mat-option value="FCL">FCL</mat-option>
-                <mat-option value="LCL">LCL</mat-option>
-              </mat-select>
-            </mat-form-field>
-            <mat-form-field class="input-half-width">
-              <input matInput placeholder="D/O RIs Date" value="" disabled />
-            </mat-form-field> 
-            <mat-form-field class="input-half-width">
-                <input matInput placeholder="Quotation No." value="" />
-              </mat-form-field>
-            <mat-form-field class="input-half-width">
-              <input matInput placeholder="Shipment RsI Date" value="" disabled />
-            </mat-form-field>
-            <mat-form-field class="input-half-width">
-                <mat-select placeholder="Sales man">
-                  <mat-option value="ADMIN DEMO2">userdemo2 - ADMIN DEMO2</mat-option>
-                  <mat-option value="Brixter Orena">userdemo - Brixter Orena</mat-option>
-                  <mat-option value="Carla Del Rosario">CARLAGOLPH - Carla Del Rosario</mat-option>
-                </mat-select>
-              </mat-form-field>
+              <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+                  <div fxFlex="50%" fxFlex.xs="100%">
+                    <mat-form-field class="input-full-width">
+                        <input matInput [matDatepicker]="last_free_storage" placeholder="Last free storage">
+                        <mat-datepicker-toggle matSuffix [for]="last_free_storage"></mat-datepicker-toggle>
+                        <mat-datepicker #last_free_storage></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div fxFlex="50%" fxFlex.xs="100%">
+                    <mat-form-field class="input-full-width">
+                        <mat-select placeholder="Source of cargo">
+                            <mat-option value="Nomination">AWP - ANTWERP</mat-option>
+                            <mat-option value="RO-Routing Order   ';';'">RO-Routing Order   ';';'</mat-option>
+                            <mat-option value="SL-Sales Lead ...">SL-Sales Lead ...</mat-option>
+                            <mat-option value="FH-Free hand">FH-Free hand</mat-option>
+                            <mat-option value="CL-Coload">CL-Coload</mat-option>
+                            <mat-option value="Consol">Consol</mat-option>
+                            <mat-option value="FCL">FCL</mat-option>
+                            <mat-option value="LCL">LCL</mat-option>
+                          </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+                    <div fxFlex="50%" fxFlex.xs="100%">
+                      <mat-form-field class="input-full-width">
+                          <input matInput placeholder="D/O RIs Date" value="" disabled />
+                      </mat-form-field>
+                    </div>
+                    <div fxFlex="50%" fxFlex.xs="100%">
+                      <mat-form-field class="input-full-width">
+                          <input matInput placeholder="Quotation No." value="" />
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+                      <div fxFlex="50%" fxFlex.xs="100%">
+                        <mat-form-field class="input-full-width">
+                            <input matInput placeholder="Shipment RsI Date" value="" disabled />
+                        </mat-form-field>
+                      </div>
+                      <div fxFlex="50%" fxFlex.xs="100%">
+                        <mat-form-field class="input-full-width">
+                            <mat-select placeholder="Sales man">
+                                <mat-option value="ADMIN DEMO2">userdemo2 - ADMIN DEMO2</mat-option>
+                                <mat-option value="Brixter Orena">userdemo - Brixter Orena</mat-option>
+                                <mat-option value="Carla Del Rosario">CARLAGOLPH - Carla Del Rosario</mat-option>
+                              </mat-select>
+                        </mat-form-field>
+                      </div>
+                    </div>
           </div>
           <div fxFlex="50%" fxFlex.xs="100%">
             <mat-form-field class="input-full-width">
@@ -56,16 +74,23 @@
                   <mat-select placeholder="Charge Collection" disabled>
                   </mat-select>
                 </mat-form-field>
-                <mat-form-field class="input-half-width">
-                  <input matInput placeholder="CC Amount" value="" disabled />
-                </mat-form-field>
-                <mat-form-field class="input-34-width">
-                  <input matInput placeholder="Payment" value="" disabled />
-                </mat-form-field>
-                <mat-form-field class="input-14-width">
-                  <mat-select placeholder="" disabled>
-                  </mat-select>
-                </mat-form-field>
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+                    <div fxFlex="50%" fxFlex.xs="100%">
+                      <mat-form-field class="input-full-width">
+                          <input matInput placeholder="CC Amount" value="" disabled />
+                      </mat-form-field>
+                    </div>
+                    <div fxFlex="35%" fxFlex.xs="75%">
+                      <mat-form-field class="input-full-width">
+                          <input matInput placeholder="Payment" value="" disabled />
+                      </mat-form-field>
+                    </div>
+                    <div fxFlex="15%" fxFlex.xs="25%">
+                        <mat-form-field class="input-full-width">
+                            <mat-select placeholder="" disabled></mat-select>
+                        </mat-form-field>
+                      </div>
+                  </div>
             </div>
             <div fxFlex="50%" fxFlex.xs="100%">
               <div class="input-full-width" style="margin-bottom:1.2em;">
