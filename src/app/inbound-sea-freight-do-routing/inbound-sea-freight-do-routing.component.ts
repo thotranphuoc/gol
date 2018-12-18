@@ -12,4 +12,8 @@ export class InboundSeaFreightDORoutingComponent implements OnInit {
   ngOnInit() {
   }
 
+  openDialogRouting(){
+    
+  }
+
 }

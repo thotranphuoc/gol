@@ -58,5 +58,9 @@ export class InboundSeaFreightDOGeneralEditComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  cancel(){
+    
+  }
 
 }

@@ -1,9 +1,9 @@
 export const firebaseConf = {
-    apiKey: "AIzaSyDEIYTBowXQ5sOosl4oilYzP-SX3zoHrSk",
-    authDomain: "angular-team.firebaseapp.com",
-    databaseURL: "https://angular-team.firebaseio.com",
-    projectId: "angular-team",
-    storageBucket: "angular-team.appspot.com",
-    messagingSenderId: "104339806453"
+    apiKey: "AIzaSyDckLDnb9bGs65_QvfG7pyHxzneLu_4px8",
+    authDomain: "gol-vietnam.firebaseapp.com",
+    databaseURL: "https://gol-vietnam.firebaseio.com",
+    projectId: "gol-vietnam",
+    storageBucket: "gol-vietnam.appspot.com",
+    messagingSenderId: "884741211555"
 
 }

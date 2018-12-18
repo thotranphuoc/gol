@@ -18,4 +18,7 @@ export class InboundSeaFreightDoPartiesEditComponent implements OnInit {
   ngOnInit() {
   }
 
+  cancel(){
+    
+  }
 }

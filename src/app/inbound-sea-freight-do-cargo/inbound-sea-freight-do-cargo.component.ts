@@ -11,5 +11,7 @@ export class InboundSeaFreightDOCargoComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  openDialogCargo(){
+    
+  }
 }

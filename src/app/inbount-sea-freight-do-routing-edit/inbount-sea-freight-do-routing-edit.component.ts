@@ -12,4 +12,7 @@ export class InbountSeaFreightDoRoutingEditComponent implements OnInit {
   ngOnInit() {
   }
 
+  cancel(){
+    
+  }
 }

@@ -11,5 +11,8 @@ export class InboundSeaFreightDOCommunicationComponent implements OnInit {
 
   ngOnInit() {
   }
+  openDialogCommunication(){
+    
+  }
 
 }

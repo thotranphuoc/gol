@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/gol-ng7-material",
+    "public": "dist/ng7-material-fitness",
     "ignore": [
       "firebase.json",
       "**/.*",
