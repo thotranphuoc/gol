@@ -15,7 +15,7 @@ import { InboundSeaFreightDOComponent } from './inbound-sea-freight-do/inbound-s
 import { InboundSeaFreightDOListComponent } from './inbound-sea-freight-do-list/inbound-sea-freight-do-list.component';
 
 const routes: Routes = [
-{ path:'', component: InboundSeaFreightDOComponent },
+{ path:'', component: InboundSeaFreightDOListComponent },
 { path:'inbound-sea-freightDO-list', component: InboundSeaFreightDOListComponent },
 { path:'inbound-sea-freightDO', component: InboundSeaFreightDOComponent },
 { path:'inbound-sea-freightDO-general', component: InboundSeaFreightDOGeneralComponent },
