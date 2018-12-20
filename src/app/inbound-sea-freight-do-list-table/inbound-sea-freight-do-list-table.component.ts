@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { GOL } from '../tmp/temp';
+import { iHBL } from '../interfaces/hbl.interface';
 @Component({
   selector: 'app-inbound-sea-freight-do-list-table',
   templateUrl: './inbound-sea-freight-do-list-table.component.html',
@@ -12,7 +13,7 @@ export class InboundSeaFreightDoListTableComponent implements OnInit {
   dataSource = ELEMENT_DATA;
 
   ngOnInit() {
-
+    console.log(this.dataSource);
   }
 }
 
@@ -53,51 +54,44 @@ export interface ListTableElement {
   on2: string;
 }
 
-const ELEMENT_DATA: ListTableElement[] = [
-  // {
-  //   filejob_no: 'Test DO 1111',
-  //   hbl_no: 'HBL No 1111',
-  //   mbl: 'MBL Test',
-  //   do_no: 'DO 1234',
-  //   shipper: 'Shipper 123',
-  //   cnee: 'Cnee 123',
-  //   carrier: 'Carrier 123',
-  //   handling_agent: 'HA 123456',
-  //   por: '123476',
-  //   pol: '123456',
-  //   pod: '1234567',
-  //   final_destination: 'HAi Phong',
-  //   vessel: '12345676',
-  //   voy: '345677',
-  //   etd: '234568',
-  //   eta: '23456868',
-  //   original_hbl_required: '36353553',
-  //   freight_term: 'hhrhryr4646',
-  //   shipment_type: '64646464',
-  //   shipment_status: '464646464',
-  //   payment_status: 'Done',
-  //   hbl_type: 'DO Template',
-  //   hbl_name: 'DO Name',
-  //   shipment_code: '123456',
-  //   cargo_source: 'rryryry',
-  //   cus_declaration_no: '44646464',
-  //   po_no: 'po no ưe',
-  //   contract_no: '234567',
-  //   salesman: 'Teme',
-  //   posting_date: '11-23-2013',
-  //   created_by: 'userdemo',
-  //   on1: '3df86686',
-  //   last_update: '12-28-2013',
-  //   on2: 'hehehe34567'
-  // },
-  // { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  // { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  // { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  // { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  // { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  // { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  // { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  // { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  // { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  // { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-];
+// const ELEMENT_DATA: ListTableElement[] = [
+//   // {
+//   //   filejob_no: 'Test DO 1111',
+//   //   hbl_no: 'HBL No 1111',
+//   //   mbl: 'MBL Test',
+//   //   do_no: 'DO 1234',
+//   //   shipper: 'Shipper 123',
+//   //   cnee: 'Cnee 123',
+//   //   carrier: 'Carrier 123',
+//   //   handling_agent: 'HA 123456',
+//   //   por: '123476',
+//   //   pol: '123456',
+//   //   pod: '1234567',
+//   //   final_destination: 'HAi Phong',
+//   //   vessel: '12345676',
+//   //   voy: '345677',
+//   //   etd: '234568',
+//   //   eta: '23456868',
+//   //   original_hbl_required: '36353553',
+//   //   freight_term: 'hhrhryr4646',
+//   //   shipment_type: '64646464',
+//   //   shipment_status: '464646464',
+//   //   payment_status: 'Done',
+//   //   hbl_type: 'DO Template',
+//   //   hbl_name: 'DO Name',
+//   //   shipment_code: '123456',
+//   //   cargo_source: 'rryryry',
+//   //   cus_declaration_no: '44646464',
+//   //   po_no: 'po no ưe',
+//   //   contract_no: '234567',
+//   //   salesman: 'Teme',
+//   //   posting_date: '11-23-2013',
+//   //   created_by: 'userdemo',
+//   //   on1: '3df86686',
+//   //   last_update: '12-28-2013',
+//   //   on2: 'hehehe34567'
+//   // },
+
+// ];
+
+const ELEMENT_DATA: iHBL[] = GOL.HBL1;
