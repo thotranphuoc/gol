@@ -46,6 +46,16 @@ import { InboundSeaFreightDoPartiesEditComponent } from './inbound-sea-freight-d
 import { InboundSeaFreightDOListComponent } from './inbound-sea-freight-do-list/inbound-sea-freight-do-list.component';
 import { InboundSeaFreightDoListTableComponent } from './inbound-sea-freight-do-list-table/inbound-sea-freight-do-list-table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InboundSeaFreightDoCargoEditComponent } from './inbound-sea-freight-do-cargo-edit/inbound-sea-freight-do-cargo-edit.component';
+import { InboundSeaFreightDoGeneralSearchFilejobnoComponent } from './inbound-sea-freight-do-general-search-filejobno/inbound-sea-freight-do-general-search-filejobno.component';
+import { InboundSeaFreightDoPartiesShipperSearchCodeComponent } from './inbound-sea-freight-do-parties-shipper-search-code/inbound-sea-freight-do-parties-shipper-search-code.component';
+import { InboundSeaFreightDoPartiesConsigneeSearchCodeComponent } from './inbound-sea-freight-do-parties-consignee-search-code/inbound-sea-freight-do-parties-consignee-search-code.component';
+import { InboundSeaFreightDoPartiesActualConsigneeSearchCodeComponent } from './inbound-sea-freight-do-parties-actual-consignee-search-code/inbound-sea-freight-do-parties-actual-consignee-search-code.component';
+import { InboundSeaFreightDoPartiesBillToSearchCodeComponent } from './inbound-sea-freight-do-parties-bill-to-search-code/inbound-sea-freight-do-parties-bill-to-search-code.component';
+import { InboundSeaFreightDoRoutingOriginalCodeSearchComponent } from './inbound-sea-freight-do-routing-original-code-search/inbound-sea-freight-do-routing-original-code-search.component';
+import { InboundSeaFreightDoRoutingPortOfLoadingCodeSearchComponent } from './inbound-sea-freight-do-routing-port-of-loading-code-search/inbound-sea-freight-do-routing-port-of-loading-code-search.component';
+import { InboundSeaFreightDoRoutingDischargeCodeSearchComponent } from './inbound-sea-freight-do-routing-discharge-code-search/inbound-sea-freight-do-routing-discharge-code-search.component';
+import { InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent } from './inbound-sea-freight-do-routing-place-of-delivery-code-search/inbound-sea-freight-do-routing-place-of-delivery-code-search.component';
 
 // var app = firebase.initializeApp(firebaseConf);
 
@@ -82,7 +92,17 @@ const PRINT_BREAKPOINTS = [{
     InboundSeaFreightDOGeneralEditComponent,
     InboundSeaFreightDoPartiesEditComponent,
     InboundSeaFreightDOListComponent,
-    InboundSeaFreightDoListTableComponent
+    InboundSeaFreightDoListTableComponent,
+    InboundSeaFreightDoCargoEditComponent,
+    InboundSeaFreightDoGeneralSearchFilejobnoComponent,
+    InboundSeaFreightDoPartiesShipperSearchCodeComponent,
+    InboundSeaFreightDoPartiesConsigneeSearchCodeComponent,
+    InboundSeaFreightDoPartiesActualConsigneeSearchCodeComponent,
+    InboundSeaFreightDoPartiesBillToSearchCodeComponent,
+    InboundSeaFreightDoRoutingOriginalCodeSearchComponent,
+    InboundSeaFreightDoRoutingPortOfLoadingCodeSearchComponent,
+    InboundSeaFreightDoRoutingDischargeCodeSearchComponent,
+    InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -110,7 +130,8 @@ const PRINT_BREAKPOINTS = [{
     StopTrainingCompoent,
     InboundSeaFreightDOGeneralEditComponent,
     InboundSeaFreightDoPartiesEditComponent,
-    InbountSeaFreightDoRoutingEditComponent
+    InbountSeaFreightDoRoutingEditComponent,
+    InboundSeaFreightDoGeneralSearchFilejobnoComponent
   ],
   
 })

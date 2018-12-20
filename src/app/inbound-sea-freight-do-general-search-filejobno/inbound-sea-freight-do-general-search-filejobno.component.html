@@ -1,0 +1,44 @@
+<h2 class="titlepage">General</h2>
+<p style="text-align:center;font-size:13px;">
+  Just click button "Search" or press "Enter" to find recent records or enter your key text below to search data you
+  need
+</p>
+<mat-card>
+  <mat-card-content>
+    <div class="container">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
+        <div fxFlex="30%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <mat-label>Find in</mat-label>
+            <mat-select>
+              <mat-option value="File No" aria-selected="true">File No</mat-option>
+              <mat-option value="Moving Type">Moving Type</mat-option>
+              <mat-option value="Origin">Origin</mat-option>
+              <mat-option value="Destination">Destination</mat-option>
+              <mat-option value="Vessel">Vessel</mat-option>
+              <mat-option value="Voy">Voy</mat-option>
+              <mat-option value="ETA">ETA</mat-option>
+              <mat-option value="Agent">Agent</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div fxFlex="60%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Please enter key words to search." value="" />
+          </mat-form-field>
+        </div>
+        <div fxFlex="10%" fxFlex.xs="100%">
+          <button mat-raised-button><u>S</u>earch</button>
+        </div>
+      </div>
+      <!-- table -->
+
+      <!-- end table -->
+      <p style="text-align:center;font-size:13px;">Click 1 record on the grid and click "OK" to select</p>
+      <div fxLayout="row" fxLayoutGap="2%" fxLayoutAlign="center center">
+          <button mat-raised-button color="primary" id="save_general">Save</button>
+          <button mat-raised-button (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+  </mat-card-content>
+</mat-card>

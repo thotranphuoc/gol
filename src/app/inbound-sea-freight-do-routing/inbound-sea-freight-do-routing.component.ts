@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { InbountSeaFreightDoRoutingEditComponent } from '../inbound-sea-freight-do-routing-edit/inbound-sea-freight-do-routing-edit.component';
+import { InbountSeaFreightDoRoutingEditComponent } from '../inbount-sea-freight-do-routing-edit/inbount-sea-freight-do-routing-edit.component';
 import { iRouting } from '../interfaces/routing.interface';
 import { LocalService } from '../services/local.service';
 
