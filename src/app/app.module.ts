@@ -45,6 +45,7 @@ import { InboundSeaFreightDOGeneralEditComponent } from './inbound-sea-freight-d
 import { InboundSeaFreightDoPartiesEditComponent } from './inbound-sea-freight-do-parties-edit/inbound-sea-freight-do-parties-edit.component';
 import { InboundSeaFreightDOListComponent } from './inbound-sea-freight-do-list/inbound-sea-freight-do-list.component';
 import { InboundSeaFreightDoListTableComponent } from './inbound-sea-freight-do-list-table/inbound-sea-freight-do-list-table.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // var app = firebase.initializeApp(firebaseConf);
 
@@ -97,10 +98,11 @@ const PRINT_BREAKPOINTS = [{
     MatStepperModule,
     MatDialogModule,
     MatListModule,
-    MatCheckboxModule,
+  MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [{provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true}],
   bootstrap: [AppComponent],
