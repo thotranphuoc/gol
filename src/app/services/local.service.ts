@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { iGeneral } from '../interfaces/general.interface';
 import { iPaties } from '../interfaces/parties.interface';
-
+import { iRouting} from '../interfaces/routing.interface';
 @Injectable({
   providedIn: 'root'
 })
@@ -51,5 +51,23 @@ export class LocalService {
     notifypart1_address: '',
     notifypart2_name: '',
     notifypart2_address: ''
+  }
+
+  ROUTING_DEFAULT: iRouting = {
+    original_code: '',
+    original_name: '',
+    discharge_code: '',
+    discharge_name: '',
+    favorite_port_discharge: '',
+    port_of_loading_code: '',
+    port_of_loading_name: '',
+    place_of_delivery_code: '',
+    place_of_delivery_name: '',
+    favorite_port_delivery: '',
+    final_dest: '',
+    cfs_terminal: '',
+    vessel: '',
+    voy: '',
+    etd: ''
   }
 }

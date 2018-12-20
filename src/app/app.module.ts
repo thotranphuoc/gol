@@ -107,7 +107,8 @@ const PRINT_BREAKPOINTS = [{
   entryComponents:[
     StopTrainingCompoent,
     InboundSeaFreightDOGeneralEditComponent,
-    InboundSeaFreightDoPartiesEditComponent
+    InboundSeaFreightDoPartiesEditComponent,
+    InbountSeaFreightDoRoutingEditComponent
   ],
   
 })
