@@ -1,3 +1,59 @@
-<p>
-  inbound-sea-freight-do-parties-shipper-search-code works!
+<h2 class="titlepage">Parties</h2>
+<p style="text-align:center;font-size:13px;">
+  Just click button "Search" or press "Enter" to find recent records or enter your key text below to search data you
+  need
 </p>
+<mat-card>
+  <mat-card-content>
+    <div class="container">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
+        <div fxFlex="25%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <mat-label>Find in</mat-label>
+            <mat-select>
+              <mat-option value="Code" selected>Code</mat-option>
+              <mat-option value="Name">Name</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div fxFlex="60%" fxFlex.xs="100%">
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Please enter key words to search." value="" />
+          </mat-form-field>
+        </div>
+        <div fxFlex="15%" fxFlex.xs="100%">
+          <button mat-raised-button><u>S</u>earch</button>
+          <button mat-raised-button><u>N</u>ew</button>
+        </div>
+      </div>
+      <!-- table -->
+      <div class="example-container mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+          <!-- No. Column -->
+          <ng-container matColumnDef="no">
+              <th mat-header-cell *matHeaderCellDef> </th>
+              <td mat-cell *matCellDef="let element"> {{element.index}} </td>
+            </ng-container>
+          <!-- Code Column -->
+          <ng-container matColumnDef="code">
+            <th mat-header-cell *matHeaderCellDef> Contact Code </th>
+            <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+          </ng-container>
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Contact Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+      <!-- end table -->
+      <p style="text-align:center;font-size:13px;">Click 1 record on the grid and click "OK" to select</p>
+      <div fxLayout="row" fxLayoutGap="2%" fxLayoutAlign="center center">
+        <button mat-raised-button color="primary" id="save_general">Save</button>
+        <button mat-raised-button (click)="cancel()">Cancel</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

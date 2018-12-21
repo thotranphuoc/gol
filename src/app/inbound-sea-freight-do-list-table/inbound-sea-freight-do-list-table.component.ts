@@ -11,7 +11,8 @@ export class InboundSeaFreightDoListTableComponent implements OnInit {
   displayedColumns =
     ['filejob_no', 'hbl_no', 'mbl', 'do_no', 'shipper', 'cnee', 'carrier', 'handling_agent', 'por', 'pol', 'pod', 'final_destination', 'vessel', 'voy', 'etd', 'eta', 'original_hbl_required', 'freight_term', 'shipment_type', 'shipment_status', 'payment_status', 'hbl_type', 'hbl_name', 'shipment_code', 'cargo_source', 'cus_declaration_no', 'po_no', 'contract_no', 'salesman', 'posting_date', 'created_by', 'on1', 'last_update', 'on2'];
   dataSource = ELEMENT_DATA;
-
+  displayedColumnsName = ['File/Job No','HBL No','M.B/L','D/O No','Shipper','Cnee','Carrier','Handling Agent','POR','POL','POD','Final Destination','Vessel','Voy.','ETD','ETA','Original HBL Required','Freight Term','Shipment Type','Shipment Status','Payment Status','H.B/L Type','H.B/L Name','Shipment code','Cargo source','Cus. Declaration No','P.O.No','Contract No','Salesman','Posting Date','Created By','On','Last Update','On'];
+  
   ngOnInit() {
     console.log(this.dataSource);
   }

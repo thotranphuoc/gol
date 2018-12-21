@@ -32,13 +32,68 @@
         </div>
       </div>
       <!-- table -->
-
+      <div class="example-container mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+          <!-- No. Column -->
+          <ng-container matColumnDef="no">
+              <th mat-header-cell *matHeaderCellDef> </th>
+              <td mat-cell *matCellDef="let element"> {{element.index}} </td>
+            </ng-container>
+          <!-- File/Job No. Column -->
+          <ng-container matColumnDef="filejob_no">
+            <th mat-header-cell *matHeaderCellDef> File/Job No </th>
+            <td mat-cell *matCellDef="let element"> {{element.filejob_no}} </td>
+          </ng-container>
+          <!-- Moving Type Column -->
+          <ng-container matColumnDef="moving_type">
+            <th mat-header-cell *matHeaderCellDef> Moving Type </th>
+            <td mat-cell *matCellDef="let element"> {{element.moving_type}} </td>
+          </ng-container>
+          <!-- Org. Column -->
+          <ng-container matColumnDef="org">
+            <th mat-header-cell *matHeaderCellDef> Org. </th>
+            <td mat-cell *matCellDef="let element"> {{element.org}} </td>
+          </ng-container>
+          <!-- Dest. Column -->
+          <ng-container matColumnDef="dest">
+            <th mat-header-cell *matHeaderCellDef> Dest. </th>
+            <td mat-cell *matCellDef="let element"> {{element.dest}} </td>
+          </ng-container>
+          <!-- Vessel/Flight Column -->
+          <ng-container matColumnDef="vessel">
+            <th mat-header-cell *matHeaderCellDef> Vessel/Flight </th>
+            <td mat-cell *matCellDef="let element"> {{element.vessel}} </td>
+          </ng-container>
+          <!-- Voy. Column -->
+          <ng-container matColumnDef="voy">
+            <th mat-header-cell *matHeaderCellDef> Voy. </th>
+            <td mat-cell *matCellDef="let element"> {{element.voy}} </td>
+          </ng-container>
+          <!-- ETA Column -->
+          <ng-container matColumnDef="eta">
+            <th mat-header-cell *matHeaderCellDef> ETA </th>
+            <td mat-cell *matCellDef="let element"> {{element.eta}} </td>
+          </ng-container>
+          <!-- H/Agent Code Column -->
+          <ng-container matColumnDef="h_agent_code">
+            <th mat-header-cell *matHeaderCellDef> H/Agent Code </th>
+            <td mat-cell *matCellDef="let element"> {{element.h_agent_code}} </td>
+          </ng-container>
+          <!-- H/Agent Name Column -->
+          <ng-container matColumnDef="h_agent_name">
+            <th mat-header-cell *matHeaderCellDef> H/Agent Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.h_agent_name}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
       <!-- end table -->
       <p style="text-align:center;font-size:13px;">Click 1 record on the grid and click "OK" to select</p>
       <div fxLayout="row" fxLayoutGap="2%" fxLayoutAlign="center center">
-          <button mat-raised-button color="primary" id="save_general">Save</button>
-          <button mat-raised-button (click)="cancel()">Cancel</button>
-        </div>
+        <button mat-raised-button color="primary" id="save_general">Save</button>
+        <button mat-raised-button (click)="cancel()">Cancel</button>
+      </div>
     </div>
   </mat-card-content>
 </mat-card>

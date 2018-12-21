@@ -14,7 +14,7 @@
                 </mat-horizontal-stepper>
               <mat-form-field class="input-half-width">
                   <input matInput placeholder="Code" value="" />
-                  <button mat-button matSuffix mat-icon-button aria-label="Search File">
+                  <button mat-button matSuffix mat-icon-button aria-label="Search shipper" (click) = "openDialogSearchShipper()">
                     <mat-icon>search</mat-icon>
                   </button>
               </mat-form-field>
@@ -42,7 +42,7 @@
                   </mat-horizontal-stepper>
                 <mat-form-field class="input-half-width">
                     <input matInput placeholder="Code" value="" />
-                    <button mat-button matSuffix mat-icon-button aria-label="Search File">
+                    <button mat-button matSuffix mat-icon-button aria-label="Search Consignee" (click) = "openDialogSearchConsignee()">
                       <mat-icon>search</mat-icon>
                     </button>
                 </mat-form-field>
@@ -58,34 +58,6 @@
                 </mat-form-field>
             </div>
           </div>
-          <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
-              <div fxFlex="100%" fxFlex.xs="100%">
-                  <mat-horizontal-stepper>
-                      <mat-step>
-                          <ng-template matStepLabel>Consignee</ng-template>
-                      </mat-step>
-                      <mat-step>
-                        <ng-template matStepLabel></ng-template>
-                    </mat-step>
-                    </mat-horizontal-stepper>
-                  <mat-form-field class="input-half-width">
-                      <input matInput placeholder="Code" value="" />
-                      <button mat-button matSuffix mat-icon-button aria-label="Search File">
-                        <mat-icon>search</mat-icon>
-                      </button>
-                  </mat-form-field>
-                  <mat-checkbox class="margin-checkbox" color="primary">Non-regular client</mat-checkbox>
-                  <mat-form-field class="input-full-width">
-                      <input matInput placeholder="Name" value="" />
-                  </mat-form-field>
-                  <mat-form-field class="input-full-width">
-                    <textarea matInput placeholder="Address"></textarea>
-                  </mat-form-field>
-                  <mat-form-field class="input-full-width">
-                      <input matInput placeholder="Email" value="" />
-                  </mat-form-field>
-              </div>
-            </div>
             <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="2%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
               <div fxFlex="100%" fxFlex.xs="100%">
                 <mat-horizontal-stepper>
@@ -103,7 +75,7 @@
               <div fxFlex="100%" fxFlex.xs="100%">      
                 <mat-form-field class="input-half-width">
                     <input matInput placeholder="Code" value="" />
-                    <button mat-button matSuffix mat-icon-button aria-label="Search File">
+                    <button mat-button matSuffix mat-icon-button aria-label="Search Actual Consignee" (click)= "openDialogSearchActualConsignee()">
                       <mat-icon>search</mat-icon>
                     </button>
                 </mat-form-field>
@@ -134,7 +106,7 @@
               <div fxFlex="100%" fxFlex.xs="100%">      
                 <mat-form-field class="input-half-width">
                     <input matInput placeholder="Code" value="" />
-                    <button mat-button matSuffix mat-icon-button aria-label="Search File">
+                    <button mat-button matSuffix mat-icon-button aria-label="Search Bill To" (click) = "openDialogSearchBillTo()">
                       <mat-icon>search</mat-icon>
                     </button>
                 </mat-form-field>

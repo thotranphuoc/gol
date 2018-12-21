@@ -1,0 +1,28 @@
+.example-container {
+    height: 35vh;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  table {
+    width: 170%;
+  }
+  td.mat-cell{padding:0 7px;border-right: 1px solid #e0e0e0;}  
+  td.mat-column-star {
+    width: 20px;
+    padding-right: 8px;
+  }
+  th.mat-header-cell {
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}    
+  .mat-table-sticky {
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .mat-table-sticky:last-child {
+    border-left: 1px solid #e0e0e0;
+  }
+  td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
+    padding-left: 0;
+}

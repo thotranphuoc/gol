@@ -12,9 +12,9 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {MatInputModule} from '@angular/material';
+import { MatInputModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 
 
 import { MaterialModule } from '../shares/material.module';
@@ -118,21 +118,29 @@ const PRINT_BREAKPOINTS = [{
     MatStepperModule,
     MatDialogModule,
     MatListModule,
-  MatCheckboxModule,
+    MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
     MatTableModule,
     HttpClientModule
   ],
-  providers: [{provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true}],
+  providers: [{ provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true }],
   bootstrap: [AppComponent],
-  entryComponents:[
+  entryComponents: [
     StopTrainingCompoent,
     InboundSeaFreightDOGeneralEditComponent,
     InboundSeaFreightDoPartiesEditComponent,
     InbountSeaFreightDoRoutingEditComponent,
-    InboundSeaFreightDoGeneralSearchFilejobnoComponent
+    InboundSeaFreightDoGeneralSearchFilejobnoComponent,
+    InboundSeaFreightDoPartiesShipperSearchCodeComponent,
+    InboundSeaFreightDoPartiesConsigneeSearchCodeComponent,
+    InboundSeaFreightDoPartiesActualConsigneeSearchCodeComponent,
+    InboundSeaFreightDoPartiesBillToSearchCodeComponent,
+    InboundSeaFreightDoRoutingOriginalCodeSearchComponent,
+    InboundSeaFreightDoRoutingPortOfLoadingCodeSearchComponent,
+    InboundSeaFreightDoRoutingDischargeCodeSearchComponent,
+    InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent
   ],
-  
+
 })
 export class AppModule { }
