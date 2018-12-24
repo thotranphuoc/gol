@@ -39,5 +39,34 @@ export class InboundSeaFreightDoPartiesEditComponent implements OnInit {
       console.log(result);
     })
   }
-
+  // consignee code search
+  openDialogSearchConsignee(): void {
+    const dialogRef = this.dialog.open(InboundSeaFreightDoPartiesConsigneeSearchCodeComponent, {
+      width: '80%',
+      height: '90vh',
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+    })
+  }
+  // actual consignee code search
+  openDialogSearchActualConsignee(): void {
+    const dialogRef = this.dialog.open(InboundSeaFreightDoPartiesActualConsigneeSearchCodeComponent, {
+      width: '80%',
+      height: '90vh',
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+    })
+  }
+  // bill to code search
+  openDialogSearchBillTo(): void {
+    const dialogRef = this.dialog.open(InboundSeaFreightDoPartiesBillToSearchCodeComponent, {
+      width: '80%',
+      height: '90vh',
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+    })
+  }
 }

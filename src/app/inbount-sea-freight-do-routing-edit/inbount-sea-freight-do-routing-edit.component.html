@@ -7,7 +7,7 @@
             <div style="height:1.7em;">&nbsp;</div>  
             <mat-form-field class="input-full-width">
               <input matInput placeholder="Origin Code" value="" />
-              <button mat-button matSuffix mat-icon-button aria-label="Search Origin Code">
+              <button mat-button matSuffix mat-icon-button aria-label="Search Origin Code" (click)="openDialogSearchOriginCode()">
                 <mat-icon>search</mat-icon>
               </button>
             </mat-form-field>
@@ -17,7 +17,7 @@
             <div style="height:1.7em;">&nbsp;</div>  
             <mat-form-field class="input-full-width">
               <input matInput placeholder="Discharge Code" value="" />
-              <button mat-button matSuffix mat-icon-button aria-label="Search Discharge Code">
+              <button mat-button matSuffix mat-icon-button aria-label="Search Discharge Code" (click)="openDialogSearchDisChargeCode()">
                 <mat-icon>search</mat-icon>
               </button>
             </mat-form-field>
@@ -50,7 +50,7 @@
             <mat-checkbox color="primary">Same as origin</mat-checkbox>  
             <mat-form-field class="input-full-width">
               <input matInput placeholder="Port of Loading Code" value="" />
-              <button mat-button matSuffix mat-icon-button aria-label="Search Port of Loading Code">
+              <button mat-button matSuffix mat-icon-button aria-label="Search Port of Loading Code"  (click)="openDialogSearchPortofLoadingCode()">
                 <mat-icon>search</mat-icon>
               </button>
             </mat-form-field>
@@ -60,7 +60,7 @@
             <mat-checkbox color="primary">Same as discharging</mat-checkbox>  
             <mat-form-field class="input-full-width">
               <input matInput placeholder="Place of Delivery Code" value="" />
-              <button mat-button matSuffix mat-icon-button aria-label="Search Place of Delivery Code">
+              <button mat-button matSuffix mat-icon-button aria-label="Search Place of Delivery Code" (click)="openDialogSearchPlaceofDeliveryCode()">
                 <mat-icon>search</mat-icon>
               </button>
             </mat-form-field>

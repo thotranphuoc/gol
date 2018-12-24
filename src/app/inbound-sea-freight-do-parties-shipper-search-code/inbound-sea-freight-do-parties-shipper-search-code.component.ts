@@ -6,7 +6,7 @@ import { iShipperSearchCode} from '../interfaces/shippersearchcode.interface';
   styleUrls: ['./inbound-sea-freight-do-parties-shipper-search-code.component.css']
 })
 export class InboundSeaFreightDoPartiesShipperSearchCodeComponent implements OnInit {
-  displayedColumns = ['no','contact_code','contact_name'];
+  displayedColumns = ['no','code','name'];
   dataSource = ELEMENT_DATA;
   constructor() { }
 
