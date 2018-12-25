@@ -56,6 +56,16 @@ import { InboundSeaFreightDoRoutingOriginalCodeSearchComponent } from './inbound
 import { InboundSeaFreightDoRoutingPortOfLoadingCodeSearchComponent } from './inbound-sea-freight-do-routing-port-of-loading-code-search/inbound-sea-freight-do-routing-port-of-loading-code-search.component';
 import { InboundSeaFreightDoRoutingDischargeCodeSearchComponent } from './inbound-sea-freight-do-routing-discharge-code-search/inbound-sea-freight-do-routing-discharge-code-search.component';
 import { InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent } from './inbound-sea-freight-do-routing-place-of-delivery-code-search/inbound-sea-freight-do-routing-place-of-delivery-code-search.component';
+import { InboundSeaFreightDoListShipperSearchComponent } from './inbound-sea-freight-do-list-shipper-search/inbound-sea-freight-do-list-shipper-search.component';
+import { InboundSeaFreightDoListCneeSearchComponent } from './inbound-sea-freight-do-list-cnee-search/inbound-sea-freight-do-list-cnee-search.component';
+import { InboundSeaFreightDoListCarrierSearchComponent } from './inbound-sea-freight-do-list-carrier-search/inbound-sea-freight-do-list-carrier-search.component';
+import { InboundSeaFreightDoListHandlingAgentSearchComponent } from './inbound-sea-freight-do-list-handling-agent-search/inbound-sea-freight-do-list-handling-agent-search.component';
+import { InboundSeaFreightDoListCargoSourceSearchComponent } from './inbound-sea-freight-do-list-cargo-source-search/inbound-sea-freight-do-list-cargo-source-search.component';
+import { InboundSeaFreightDoListSalesmanSearchComponent } from './inbound-sea-freight-do-list-salesman-search/inbound-sea-freight-do-list-salesman-search.component';
+import { InboundSeaFreightDoListPortOfReceiptSearchComponent } from './inbound-sea-freight-do-list-port-of-receipt-search/inbound-sea-freight-do-list-port-of-receipt-search.component';
+import { InboundSeaFreightDoListPortOfLoadingSearchComponent } from './inbound-sea-freight-do-list-port-of-loading-search/inbound-sea-freight-do-list-port-of-loading-search.component';
+import { InboundSeaFreightDoListPortOfDischargeSearchComponent } from './inbound-sea-freight-do-list-port-of-discharge-search/inbound-sea-freight-do-list-port-of-discharge-search.component';
+import { InboundSeaFreightDoListFinalDestinationSearchComponent } from './inbound-sea-freight-do-list-final-destination-search/inbound-sea-freight-do-list-final-destination-search.component';
 
 // var app = firebase.initializeApp(firebaseConf);
 
@@ -102,7 +112,17 @@ const PRINT_BREAKPOINTS = [{
     InboundSeaFreightDoRoutingOriginalCodeSearchComponent,
     InboundSeaFreightDoRoutingPortOfLoadingCodeSearchComponent,
     InboundSeaFreightDoRoutingDischargeCodeSearchComponent,
-    InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent
+    InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent,
+    InboundSeaFreightDoListShipperSearchComponent,
+    InboundSeaFreightDoListCneeSearchComponent,
+    InboundSeaFreightDoListCarrierSearchComponent,
+    InboundSeaFreightDoListHandlingAgentSearchComponent,
+    InboundSeaFreightDoListCargoSourceSearchComponent,
+    InboundSeaFreightDoListSalesmanSearchComponent,
+    InboundSeaFreightDoListPortOfReceiptSearchComponent,
+    InboundSeaFreightDoListPortOfLoadingSearchComponent,
+    InboundSeaFreightDoListPortOfDischargeSearchComponent,
+    InboundSeaFreightDoListFinalDestinationSearchComponent
   ],
   imports: [
     BrowserModule,
