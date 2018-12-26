@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +16,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material';
 import { MatTableModule } from '@angular/material/table';
-
+import { MAT_DIALOG_DATA } from '@angular/material';
+import { MatSelectModule } from '@angular/material/select';
 
 import { MaterialModule } from '../shares/material.module';
 import { ExampleMaterialComponent } from './example-material/example-material.component';
@@ -142,9 +144,13 @@ const PRINT_BREAKPOINTS = [{
     MatInputModule,
     MatFormFieldModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule
   ],
-  providers: [{ provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true }],
+  providers: [{ provide: BREAKPOINT, useValue: PRINT_BREAKPOINTS, multi: true },
+    { provide: MAT_DIALOG_DATA, useValue: [] }
+
+  ],
   bootstrap: [AppComponent],
   entryComponents: [
     StopTrainingCompoent,
@@ -159,7 +165,17 @@ const PRINT_BREAKPOINTS = [{
     InboundSeaFreightDoRoutingOriginalCodeSearchComponent,
     InboundSeaFreightDoRoutingPortOfLoadingCodeSearchComponent,
     InboundSeaFreightDoRoutingDischargeCodeSearchComponent,
-    InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent
+    InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent,
+    InboundSeaFreightDoListShipperSearchComponent,
+    InboundSeaFreightDoListCneeSearchComponent,
+    InboundSeaFreightDoListCarrierSearchComponent,
+    InboundSeaFreightDoListHandlingAgentSearchComponent,
+    InboundSeaFreightDoListCargoSourceSearchComponent,
+    InboundSeaFreightDoListSalesmanSearchComponent,
+    InboundSeaFreightDoListPortOfReceiptSearchComponent,
+    InboundSeaFreightDoListPortOfLoadingSearchComponent,
+    InboundSeaFreightDoListPortOfDischargeSearchComponent,
+    InboundSeaFreightDoListFinalDestinationSearchComponent
   ],
 
 })

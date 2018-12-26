@@ -1,13 +1,15 @@
 .example-container {
     height: 400px;
-    width: 100%;
+    width: 98%;
     overflow: auto;
+    margin: 0 auto;
   }
   
   table {
     width: 300%;
   }
-  td{padding:0 7px;}  
+  td.mat-cell{padding:0 7px;border-right: 1px solid #e0e0e0;} 
+  tr:nth-child(even) {background: #CCC}   
   td.mat-column-star {
     width: 20px;
     padding-right: 8px;
@@ -24,5 +26,5 @@
     border-left: 1px solid #e0e0e0;
   }
   td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
-    padding-left: 0;
+    padding: 0 7px;
 }
