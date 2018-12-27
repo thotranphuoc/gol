@@ -1,7 +1,7 @@
 #container{
     display: flex;
     flex: 1;
-    width:92.7%;margin:0 auto;
+    width:96%;margin:0 auto;
 }
 
 #partiesComponent{
@@ -11,4 +11,3 @@
 #generalComponent{
     flex:1;
 }
-.mat-grid-list{width:93% !important;margin: 0 auto !important;}

@@ -17,7 +17,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-grid-tile{border:1px solid #ccc;}
 .mat-grid-tile .mat-figure{justify-content:left !important;padding: 0 0 0 10px !important;}
 .mat-list-base .mat-list-item{background:#00aae5 !important;margin: 0 0 5px 0 !important; color:#fff !important;}
-.mat-card{width:90%;margin:0 auto;}
+.mat-card{width:92%;margin:0 auto;}
+@media screen and (max-width:2560px){
+    .mat-toolbar-single-row {padding:0 3.4% !important;}
+}
+@media screen and (max-width:1920px){
+    .mat-toolbar-single-row {padding:0 3.3% !important;}
+}
+@media screen and (max-width:1600px){
+    .mat-toolbar-single-row {padding:0 2.9% !important;}
+}
+@media screen and (max-width:1440px){
+    .mat-toolbar-single-row {padding:0 2.8% !important;}
+}
+@media screen and (max-width:1400px){
+    .mat-toolbar-single-row {padding:0 2.8% !important;}
+}
+@media screen and (max-width:1366px){
+    .mat-toolbar-single-row {padding:0 2.6% !important;}
+}
 @media screen and (max-width:568px){
     .w100{width:100% !important;}
     .input-half-width {width: 100%;margin-right: 0;}
