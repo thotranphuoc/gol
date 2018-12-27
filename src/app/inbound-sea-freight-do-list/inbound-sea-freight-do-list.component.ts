@@ -16,7 +16,7 @@ import { InboundSeaFreightDoListShipperSearchComponent } from '../inbound-sea-fr
   styleUrls: ['./inbound-sea-freight-do-list.component.css']
 })
 export class InboundSeaFreightDOListComponent implements OnInit {
-
+  selected = '30';
   constructor( 
     @Inject(MAT_DIALOG_DATA) public data: any,
     private dialog: MatDialog

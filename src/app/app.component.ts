@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  logoimg:any = "logo.png";
   title = 'ng7-material-fitness';
   openSidenav = false;
 }
