@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .titlepage{color:#00aae5;font-size: 1.4em;text-transform: uppercase;text-align: center;padding: 10px 0;}
+.titlepagesub{color:#00aae5;font-size: 1.2em;padding: 10px 0;}
 .form {min-width: 150px;max-width: 1000px;width: 100%;}  
 .input-full-width {width: 100%;}
 .input-half-width {width: 48%;margin-right: 2%;}
@@ -10,7 +11,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .input-14-width{width:12.5%;}
 .input-25-width{width:25%;}
 .margin-checkbox{margin:0 10px;}
-#mat-checkbox-4 .mat-checkbox-layout,#mat-checkbox-6 .mat-checkbox-layout,#mat-checkbox-8 .mat-checkbox-layout,#mat-checkbox-9 .mat-checkbox-layout{margin-top:-70px;}
+/* #mat-checkbox-4 .mat-checkbox-layout,#mat-checkbox-6 .mat-checkbox-layout,#mat-checkbox-8 .mat-checkbox-layout,#mat-checkbox-9 .mat-checkbox-layout{margin-top:-70px;} */
 .fl{float: left;}
 .fr{float:right;}
 .mat-step-icon-state-number{display: none;}

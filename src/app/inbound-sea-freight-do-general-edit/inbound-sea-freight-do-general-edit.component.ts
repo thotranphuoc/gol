@@ -11,6 +11,7 @@ import { GOL }  from '../tmp/temp';
   styleUrls: ['./inbound-sea-freight-do-general-edit.component.css']
 })
 export class InboundSeaFreightDOGeneralEditComponent implements OnInit {
+  selected  = '';
   GENERAL: iGeneral;
 
   constructor( 

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { iGeneral } from '../interfaces/general.interface';
 import { iPaties } from '../interfaces/parties.interface';
 import { iRouting} from '../interfaces/routing.interface';
+import { iCargo } from '../interfaces/cargo.interface';
 @Injectable({
   providedIn: 'root'
 })
@@ -69,5 +70,24 @@ export class LocalService {
     vessel: '',
     voy: '',
     etd: ''
+  }
+  CARGO_DEFAULT: iCargo = {
+    container_number: '',
+    carrier_seal_no: '',
+    shipper_seal_no: '',
+    container_type: '',
+    shipper_owned: '',
+    part_of_container: '',
+    reefer_temperature: '',
+    pkg_qty: '',
+    pkg_type: '',
+    gw: '',
+    gw_unit: '',
+    commodity: '',
+    vol: '',
+    vol_unit: '',
+    cargo_desc: '',
+    shipping_mark: '',
+    hs_code: ''
   }
 }

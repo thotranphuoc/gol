@@ -154,6 +154,7 @@ const PRINT_BREAKPOINTS = [{
   bootstrap: [AppComponent],
   entryComponents: [
     StopTrainingCompoent,
+    InboundSeaFreightDoCargoEditComponent,
     InboundSeaFreightDOGeneralEditComponent,
     InboundSeaFreightDoPartiesEditComponent,
     InbountSeaFreightDoRoutingEditComponent,

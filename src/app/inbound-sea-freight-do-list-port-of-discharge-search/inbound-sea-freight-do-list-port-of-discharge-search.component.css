@@ -7,6 +7,7 @@
   table {
     width: 100%;
   }
+  tr.mat-header-row{background:#00aae5;color:#fff !important;}
   td.mat-cell{padding:0 7px;border-right: 1px solid #e0e0e0;}
   tr:nth-child(even) {background: #CCC}  
   td.mat-column-star {
