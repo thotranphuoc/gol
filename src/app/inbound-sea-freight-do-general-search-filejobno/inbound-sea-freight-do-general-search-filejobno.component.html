@@ -10,8 +10,8 @@
         <div fxFlex="30%" fxFlex.xs="100%">
           <mat-form-field class="input-full-width">
             <mat-label>Find in</mat-label>
-            <mat-select>
-              <mat-option value="File No" aria-selected="true">File No</mat-option>
+            <mat-select [(value)]="selected">
+              <mat-option value="File No">File No</mat-option>
               <mat-option value="Moving Type">Moving Type</mat-option>
               <mat-option value="Origin">Origin</mat-option>
               <mat-option value="Destination">Destination</mat-option>
@@ -91,8 +91,8 @@
       <!-- end table -->
       <p style="text-align:center;font-size:13px;">Click 1 record on the grid and click "OK" to select</p>
       <div fxLayout="row" fxLayoutGap="2%" fxLayoutAlign="center center">
-        <button mat-raised-button color="primary" id="save_general">Save</button>
-        <button mat-raised-button>Cancel</button>
+        <button mat-stroked-button>Save</button>
+        <button mat-stroked-button>Cancel</button>
       </div>
     </div>
   </mat-card-content>

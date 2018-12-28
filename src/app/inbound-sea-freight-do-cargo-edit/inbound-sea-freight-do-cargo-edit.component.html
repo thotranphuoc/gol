@@ -1,3 +1,68 @@
-<p>
-  inbound-sea-freight-do-cargo-edit works!
-</p>
+<mat-card>
+  <mat-card-content>
+    <div class="container">
+      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.xs="0">
+        <div fxFlex="35%" fxFlex.xs="100%">
+          <h2>Container</h2>
+          <a href="#">Multi containers data entry</a>
+          <mat-checkbox class="margin-checkbox fr" labelPosition="before" color="primary">Same as Consignee</mat-checkbox>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Container number" value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Carrier Seal No." value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Shipper's Seal No." value="" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-select placeholder="Container type">
+              <mat-option value="20 BULK">20 BULK</mat-option>
+              <mat-option value="20 FEET DRY CONTAINER">20 FEET DRY CONTAINER</mat-option>
+              <mat-option value="20 FLAT RACK">20 FLAT RACK</mat-option>
+              <mat-option value="20 HARD TOP">20 HARD TOP</mat-option>
+              <mat-option value="20 INSULATED">20 INSULATED</mat-option>
+              <mat-option value="20 OPEN TOP">20 OPEN TOP</mat-option>
+              <mat-option value="20 PLATFORM">20 PLATFORM</mat-option>
+              <mat-option value="20 REEFER">20 REEFER</mat-option>
+              <mat-option value="20' STANDARD DRY">20' STANDARD DRY</mat-option>
+              <mat-option value="20 TANK">20 TANK</mat-option>
+              <mat-option value="20 VENTILATED">20 VENTILATED</mat-option>
+              <mat-option value="20'' DC">20" DC</mat-option>
+              <mat-option value="20'FR">20'FR</mat-option>
+              <mat-option value="40 COLLAPSIBLE FLAT RACK">40 COLLAPSIBLE FLAT RACK</mat-option>
+              <mat-option value="40 FEET DRY CONTAINER">40 FEET DRY CONTAINER</mat-option>
+              <mat-option value="40 FEET HIGH CONTAINER">40 FEET HIGH CONTAINER</mat-option>
+              <mat-option value="40 FLAT RACK">40 FLAT RACK</mat-option>
+              <mat-option value="40 HARD TOP">40 HARD TOP</mat-option>
+              <mat-option value="40 HIGH CUBE">40 HIGH CUBE</mat-option>
+              <mat-option value="40 HIGH CUBE HARD TOP">40 HIGH CUBE HARD TOP</mat-option>
+              <mat-option value="40 INSULATED">40 INSULATED</mat-option>
+              <mat-option value="40 OPEN TOP">40 OPEN TOP</mat-option>
+              <mat-option value="40 PLATFORM">40 PLATFORM</mat-option>
+              <mat-option value="40 REEFER">40 REEFER</mat-option>
+              <mat-option value="40 REEFER HIGH CUBE">40 REEFER HIGH CUBE</mat-option>
+              <mat-option value="40 STANDARD DRY">40 STANDARD DRY</mat-option>
+              <mat-option value="40 TANK">40 TANK</mat-option>
+              <mat-option value="40 VENTILATED">40 VENTILATED</mat-option>
+              <mat-option value="45 HIGH CUBE">45 HIGH CUBE</mat-option>
+              <mat-option value="45 REEFER HIGH CUBE">45 REEFER HIGH CUBE</mat-option>
+              <mat-option value="RH">RH</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-checkbox class="margin-checkbox" labelPosition="after" color="primary">Shipper's owned</mat-checkbox>
+          <mat-checkbox class="margin-checkbox" labelPosition="after" color="primary">Part of container</mat-checkbox>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Reefer temperature" value="" />
+          </mat-form-field>
+          <button mat-raised-button>New Container</button>
+          <button mat-raised-button>Copy</button>
+          <button mat-raised-button>Remove</button>
+        </div>
+        <div fxFlex="65%" fxFlex.xs="100%">
+
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

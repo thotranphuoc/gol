@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+
 
 @Component({
   selector: 'app-inbound-sea-freight-do-cargo-edit',

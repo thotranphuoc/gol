@@ -6,6 +6,7 @@ import { iSearchFileNo} from '../interfaces/searchfileno.interface';
   styleUrls: ['./inbound-sea-freight-do-general-search-filejobno.component.css']
 })
 export class InboundSeaFreightDoGeneralSearchFilejobnoComponent implements OnInit {
+  selected = 'File No';
   displayedColumns =
     ['no','filejob_no', 'moving_type', 'org', 'dest', 'vessel', 'voy', 'eta', 'h_agent_code', 'h_agent_name'];
   dataSource = ELEMENT_DATA;

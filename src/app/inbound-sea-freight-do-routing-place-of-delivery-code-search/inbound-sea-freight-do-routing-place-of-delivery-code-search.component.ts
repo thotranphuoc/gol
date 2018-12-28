@@ -6,6 +6,7 @@ import { iPlaceofDeliveryCode} from '../interfaces/placeofdeliverycode.interface
   styleUrls: ['./inbound-sea-freight-do-routing-place-of-delivery-code-search.component.css']
 })
 export class InboundSeaFreightDoRoutingPlaceOfDeliveryCodeSearchComponent implements OnInit {
+  selected = 'Code';
   displayedColumns = ['no','port_code','port_name','country_name'];
   dataSource = ELEMENT_DATA;
   constructor() { }

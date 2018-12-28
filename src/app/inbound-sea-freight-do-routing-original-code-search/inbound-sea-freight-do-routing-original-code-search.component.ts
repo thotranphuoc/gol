@@ -6,6 +6,7 @@ import { iOriginCode } from '../interfaces/oringincode.interface';
   styleUrls: ['./inbound-sea-freight-do-routing-original-code-search.component.css']
 })
 export class InboundSeaFreightDoRoutingOriginalCodeSearchComponent implements OnInit {
+  selected = 'Code';
   displayedColumns = ['no','port_code','port_name','country_name'];
   dataSource = ELEMENT_DATA;
   constructor() { }

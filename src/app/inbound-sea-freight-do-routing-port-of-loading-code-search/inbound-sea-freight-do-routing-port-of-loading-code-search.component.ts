@@ -6,6 +6,7 @@ import { iPortofLoadingCode } from '../interfaces/portofloadingcode.interface';
   styleUrls: ['./inbound-sea-freight-do-routing-port-of-loading-code-search.component.css']
 })
 export class InboundSeaFreightDoRoutingPortOfLoadingCodeSearchComponent implements OnInit {
+  selected = 'Code';
   displayedColumns = ['no','port_code','port_name','country_name'];
   dataSource = ELEMENT_DATA;
   constructor() { }

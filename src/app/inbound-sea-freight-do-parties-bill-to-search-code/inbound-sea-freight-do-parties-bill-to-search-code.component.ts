@@ -6,6 +6,7 @@ import { iBilltoSearchCode} from '../interfaces/billtosearchcode.interface';
   styleUrls: ['./inbound-sea-freight-do-parties-bill-to-search-code.component.css']
 })
 export class InboundSeaFreightDoPartiesBillToSearchCodeComponent implements OnInit {
+  selected = 'Code';
   displayedColumns = ['no','code','name'];
   dataSource = ELEMENT_DATA;
   constructor() { }

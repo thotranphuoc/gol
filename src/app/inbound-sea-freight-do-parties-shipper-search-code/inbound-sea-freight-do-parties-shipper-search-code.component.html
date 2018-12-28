@@ -6,11 +6,11 @@
   <mat-card-content>
     <div class="container">
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="3%" fxLayoutGap.xs="0" fxLayoutAlign="flex-start">
-        <div fxFlex="25%" fxFlex.xs="100%">
+        <div fxFlex="24%" fxFlex.xs="100%">
           <mat-form-field class="input-full-width">
             <mat-label>Find in</mat-label>
-            <mat-select>
-              <mat-option value="Code" selected>Code</mat-option>
+            <mat-select [(value)]="selected">
+              <mat-option value="Code">Code</mat-option>
               <mat-option value="Name">Name</mat-option>
             </mat-select>
           </mat-form-field>
@@ -20,9 +20,9 @@
             <input matInput placeholder="Please enter key words to search." value="" />
           </mat-form-field>
         </div>
-        <div fxFlex="15%" fxFlex.xs="100%">
-          <button mat-raised-button><u>S</u>earch</button>
-          <button mat-raised-button><u>N</u>ew</button>
+        <div fxFlex="16%" fxFlex.xs="100%">
+          <button mat-stroked-button style="margin-right:5px;"><u>S</u>earch</button>
+          <button mat-stroked-button><u>N</u>ew</button>
         </div>
       </div>
       <!-- table -->
@@ -50,8 +50,8 @@
       <!-- end table -->
       <p style="text-align:center;font-size:13px;">Click 1 record on the grid and click "OK" to select</p>
       <div fxLayout="row" fxLayoutGap="2%" fxLayoutAlign="center center">
-        <button mat-raised-button color="primary" id="save_general">Save</button>
-        <button mat-raised-button mat-dialog-close>Cancel</button>
+        <button mat-stroked-button>Save</button>
+        <button mat-stroked-button mat-dialog-close>Cancel</button>
       </div>
     </div>
   </mat-card-content>

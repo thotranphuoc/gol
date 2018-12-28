@@ -6,6 +6,7 @@ import { iDischargeCode } from '../interfaces/dischargecode.interface';
   styleUrls: ['./inbound-sea-freight-do-routing-discharge-code-search.component.css']
 })
 export class InboundSeaFreightDoRoutingDischargeCodeSearchComponent implements OnInit {
+  selected = 'Code';
   displayedColumns = ['no','port_code','port_name','country_name'];
   dataSource = ELEMENT_DATA;
   constructor() { }

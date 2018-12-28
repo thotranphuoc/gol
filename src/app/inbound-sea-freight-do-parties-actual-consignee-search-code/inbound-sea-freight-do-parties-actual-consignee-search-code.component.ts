@@ -6,6 +6,7 @@ import { iActualConsigneeSearchCode } from '../interfaces/actualconsigneesearchc
   styleUrls: ['./inbound-sea-freight-do-parties-actual-consignee-search-code.component.css']
 })
 export class InboundSeaFreightDoPartiesActualConsigneeSearchCodeComponent implements OnInit {
+  selected = 'Code';
   displayedColumns = ['no','code','name'];
   dataSource = ELEMENT_DATA;
   constructor() { }

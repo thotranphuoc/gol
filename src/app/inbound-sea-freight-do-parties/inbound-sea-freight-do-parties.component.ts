@@ -10,7 +10,7 @@ import { LocalService } from '../services/local.service';
   styleUrls: ['./inbound-sea-freight-do-parties.component.css']
 })
 export class InboundSeaFreightDOPartiesComponent implements OnInit {
-
+  selected = 'Code';
   PARTIES: iPaties;
   constructor(
     private dialog: MatDialog,
